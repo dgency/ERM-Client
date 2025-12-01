@@ -1,0 +1,37 @@
+{
+	"head_message": {
+		"heading": "Sprint or Marathon? We Can Go As Fast As You Need To Get The Job Done",
+		"text_line": "Whether you need a little advice or someone to take over everything, we can help."
+	},
+
+	"card_content": {
+		"first_card": {
+			"heading": "Ongoing Facebook Ads Management",
+			"pera": "Toss us the keys, and we’ll take you where you wanna go. We’ll handle everything for you..",
+			"image": "/Ongoing Expert Management-escape-room-marketer.svg"
+		},
+
+		"others_card": [
+			{
+				"heading": "One-Time Facebook Ad Audit",
+				"pera": "Get detailed step-by-step Facebook ad recommendations for you to implement.",
+				"image": "/Deep One-Time Audit-escape-room-marketer.svg"
+			},
+			{
+				"heading": "One-Time Facebook Ad Setup",
+				"pera": "We’ll build you a Facebook ad engine that you own and dominate with.",
+				"image": "/Strong One-Time Setup-escape-room-marketer.svg"
+			},
+			{
+				"heading": "Facebook Ad Consulting",
+				"pera": "We’ll continuously help you prioritize and execute, while you implement everything.",
+				"image": "/Ongoing-Consulting-escape-room-marketer-01.svg"
+			},
+			{
+				"heading": "Pure Facebook Ad Performance",
+				"pera": "Revenue partnership with higher upside for the both of us. Talk about win/win.",
+				"image": "/Pure Performanceescape-room-marketer.svg"
+			}
+		]
+	}
+}

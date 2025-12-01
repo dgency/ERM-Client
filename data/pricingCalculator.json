@@ -1,0 +1,99 @@
+{
+	"main_categories": [
+		{
+			"id": "p1",
+			"title": "SEARCH ENGINE MARKETING",
+			"main_item": [
+				{
+					"id": "I1",
+					"item_title": "One-Time Google & Microsoft Ads Audit",
+					"price": 750,
+					"image": "One-Time-Google-&-Microsoft-Ads-Audit-01.svg",
+					"description": "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart."
+				},
+				{
+					"id": "I2",
+					"item_title": "One-Time Google & Microsoft Ads Setup",
+					"price": 1500,
+					"image": "One-Time-Google-&-Microsoft-Ads-Setup-01.svg",
+					"description": "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart."
+				},
+				{
+					"id": "I3",
+					"item_title": "Monthly Google & Microsoft Ads Management",
+					"price": 700,
+					"image": "Monthly-Google-&-Microsoft-Ads-Management-01.svg",
+					"description": "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart."
+				},
+				{
+					"id": "I4",
+					"item_title": "Monthly SEO Management",
+					"price": 500,
+					"image": "Monthly-SEO-Management-01.svg",
+					"description": "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart."
+				}
+			]
+		},
+		{
+			"id": "p2",
+			"title": "SOCIAL MEDIA MARKETING",
+			"main_item": [
+				{
+					"id": "I5",
+					"item_title": "Monthly Facebook and Instagram Ads Management ",
+					"price": 600,
+					"image": "Monthly-Facebook-and-Instagram-Ads-Management-01-01.svg",
+					"description": "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart."
+				},
+				{
+					"id": "I6",
+					"item_title": "Monthly LinkedIn Ads Management",
+					"price": 500,
+					"image": "Monthly-LinkedIn-Ads-Management-01.svg",
+					"description": "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart."
+				},
+				{
+					"id": "I7",
+					"item_title": "Monthly Organic Social Media Management",
+					"price": 500,
+					"image": "Monthly-Organic-Social-Media-Management-01.svg",
+					"description": "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart."
+				}
+			]
+		},
+
+		{
+			"id": "p3",
+			"title": "CONVERSION RATE OPTIMIZATION",
+			"main_item": [
+				{
+					"id": "I8",
+					"item_title": "Single Landing Page Development",
+					"price": 750,
+					"image": "Landing Page Agency-01.svg",
+					"description": "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart."
+				},
+				{
+					"id": "I9",
+					"item_title": "Complete Website Development",
+					"price": 5000,
+					"image": "Landing Page Design-01.svg",
+					"description": "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart."
+				}
+			]
+		},
+		{
+			"id": "p4",
+			"title": "EMAIL MARKETING",
+			"main_item": [
+				{
+					"id": "I10",
+					"item_title": "Monthly Email Marketing Management",
+					"price": 300,
+					"image": "Email Marketing Agency-01.svg",
+					"description": "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart."
+				}
+			]
+		}
+	]
+}

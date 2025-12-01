@@ -1,0 +1,467 @@
+/* @-webkit-keyframes spin-360 {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+@keyframes spin-360 {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+} */
+@-webkit-keyframes cascade-down {
+	0% {
+		transform: translateY(0, -8px);
+		opacity: 1;
+	}
+	90% {
+		/* transform: translateY(0, -8px); */
+		opacity: 1;
+	}
+	100% {
+		transform: translate(0, 780px);
+		opacity: 0;
+	}
+}
+@keyframes cascade-down {
+	0% {
+		transform: translateY(0, -8px);
+		opacity: 1;
+	}
+	90% {
+		/* transform: translateY(0, -8px); */
+		opacity: 1;
+	}
+	100% {
+		transform: translate(0, 780px);
+		opacity: 0;
+	}
+}
+.Dashboard {
+	display: flex;
+	flex-direction: column;
+	min-height: 800px;
+	position: relative;
+	/* background: #0e233d; */
+}
+.Dashboard_members {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	transform: translate3d(0, 0, 0);
+	overflow: hidden;
+}
+.Dashboard_members:before {
+	content: "";
+	display: block;
+	/* background: linear-gradient(0deg, rgba(14, 35, 61, 0), #0e233d); */
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 30%;
+	position: absolute;
+	z-index: 990;
+}
+
+.group1 {
+	margin-top: -80px;
+	margin-left: -30px;
+}
+.group2 {
+	margin-top: -130px;
+	margin-left: -80px;
+}
+.group2 .Dashboard_members_dot {
+	position: relative;
+	-webkit-animation: 4s cascade-down linear;
+	animation: 4s cascade-down linear;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+	-webkit-animation-iteration-count: 1;
+	animation-iteration-count: 1;
+	left: 20%;
+}
+
+.group .Dashboard_members_dot {
+	position: relative;
+	-webkit-animation: 7s cascade-down linear;
+	animation: 7s cascade-down linear;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+	-webkit-animation-iteration-count: 1;
+	animation-iteration-count: 1;
+	left: 20%;
+}
+
+.Member {
+	position: absolute;
+	display: block;
+	width: 40px;
+	height: 40px;
+}
+
+.cash {
+}
+
+/* .group1 .Dashboard_members_dot {
+	position: relative;
+	-webkit-animation: 6s cascade-down linear;
+	animation: 6s cascade-down linear;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+	-webkit-animation-iteration-count: 1;
+	animation-iteration-count: 5;
+	left: 20%;
+} */
+
+.Dashboard_members_dot:nth-child(0) {
+	left: 23%;
+	top: 0;
+	-webkit-animation-delay: 0ms;
+	animation-delay: 0ms;
+}
+.Dashboard_members_dot:nth-child(0) .Member {
+	/* -webkit-animation-delay: 0ms;
+	animation-delay: 0ms; */
+	width: 40px;
+	height: 40px;
+	/* transform: scale(1, 1); */
+}
+.Dashboard_members_dot:nth-child(1) {
+	left: 50%;
+	top: 0;
+	-webkit-animation-delay: 125ms;
+	animation-delay: 1125ms;
+}
+.group .Dashboard_members_dot:nth-child(1) .Member {
+	width: 55px;
+	height: 55px;
+}
+
+.Dashboard_members_dot:nth-child(2) {
+	left: 55%;
+	top: 0;
+	-webkit-animation-delay: 1150ms;
+	animation-delay: 1150ms;
+}
+
+.Dashboard_members_dot:nth-child(3) {
+	left: 25%;
+	top: 0;
+	-webkit-animation-delay: 2175ms;
+	animation-delay: 2175ms;
+}
+.group2 .Dashboard_members_dot:nth-child(3) .Member {
+	width: 60px;
+	height: 60px;
+}
+
+.Dashboard_members_dot:nth-child(4) {
+	left: 37%;
+	top: 0;
+	-webkit-animation-delay: 1200ms;
+	animation-delay: 1200ms;
+}
+
+.Dashboard_members_dot:nth-child(5) {
+	left: 65%;
+	top: 0;
+	-webkit-animation-delay: 225ms;
+	animation-delay: 225ms;
+}
+
+.Dashboard_members_dot:nth-child(6) {
+	left: 75%;
+	top: 0;
+	-webkit-animation-delay: 250ms;
+	animation-delay: 250ms;
+}
+
+.Dashboard_members_dot:nth-child(7) {
+	left: 30%;
+	top: 0;
+	-webkit-animation-delay: 275ms;
+	animation-delay: 1275ms;
+}
+
+.Dashboard_members_dot:nth-child(8) {
+	left: 40%;
+	top: 0;
+	-webkit-animation-delay: 500ms;
+	animation-delay: 500ms;
+}
+/* .Dashboard_members_dot:nth-child(8) .Member {
+	-webkit-animation-delay: 200ms;
+	animation-delay: 200ms;
+} */
+.Dashboard_members_dot:nth-child(9) {
+	left: 85%;
+	top: 0;
+	-webkit-animation-delay: 325ms;
+	animation-delay: 325ms;
+}
+/* .Dashboard_members_dot:nth-child(9) .Member {
+	-webkit-animation-delay: 225ms;
+	animation-delay: 225ms;
+} */
+.Dashboard_members_dot:nth-child(10) {
+	left: 58%;
+	top: 0;
+	-webkit-animation-delay: 950ms;
+	animation-delay: 950ms;
+}
+/* .Dashboard_members_dot:nth-child(10) .Member {
+	-webkit-animation-delay: 250ms;
+	animation-delay: 250ms;
+} */
+.Dashboard_members_dot:nth-child(11) {
+	left: 42%;
+	top: 0;
+	-webkit-animation-delay: 775ms;
+	animation-delay: 775ms;
+}
+/* .Dashboard_members_dot:nth-child(11) .Member {
+	-webkit-animation-delay: 250ms;
+	animation-delay: 250ms;
+} */
+.Dashboard_members_dot:nth-child(12) {
+	left: 27%;
+	top: 0;
+	-webkit-animation-delay: 475ms;
+	animation-delay: 1475ms;
+}
+.group2 .Dashboard_members_dot:nth-child(12) .Member {
+	width: 60px;
+	height: 60px;
+}
+
+.Dashboard_members_dot:nth-child(13) {
+	left: 90%;
+	top: 0;
+	-webkit-animation-delay: 1300ms;
+	animation-delay: 1300ms;
+}
+.group .Dashboard_members_dot:nth-child(13) .Member {
+	width: 60px;
+	height: 60px;
+}
+
+.Dashboard_members_dot:nth-child(14) {
+	left: 93%;
+	top: 0;
+	-webkit-animation-delay: 400ms;
+	animation-delay: 400ms;
+}
+.Dashboard_members_dot:nth-child(14) .Member {
+	-webkit-animation-delay: 400ms;
+	animation-delay: 400ms;
+}
+.Dashboard_members_dot:nth-child(15) {
+	left: 61%;
+	top: 0;
+	-webkit-animation-delay: 1700ms;
+	animation-delay: 1700ms;
+}
+.Dashboard_members_dot:nth-child(16) {
+	left: 71%;
+	top: 0;
+	-webkit-animation-delay: 3000ms;
+	animation-delay: 3000ms;
+}
+.Dashboard_members_dot:nth-child(17) {
+	left: 77%;
+	top: 0;
+	-webkit-animation-delay: 1300ms;
+	animation-delay: 1300ms;
+}
+.Dashboard_members_dot:nth-child(18) {
+	left: 81%;
+	top: 0;
+	-webkit-animation-delay: 1600ms;
+	animation-delay: 1600ms;
+}
+.Dashboard_members_dot:nth-child(19) {
+	left: 87%;
+	top: 0;
+	-webkit-animation-delay: 2300ms;
+	animation-delay: 2300ms;
+}
+.group .Dashboard_members_dot:nth-child(19) .Member {
+	width: 60px;
+	height: 60px;
+}
+.Dashboard_members_dot:nth-child(20) {
+	left: 52%;
+	top: 0;
+	-webkit-animation-delay: 2400ms;
+	animation-delay: 2400ms;
+}
+.Dashboard_members_dot:nth-child(21) {
+	left: 47%;
+	top: 0;
+	-webkit-animation-delay: 2900ms;
+	animation-delay: 2900ms;
+}
+.group .Dashboard_members_dot:nth-child(21) .Member {
+	width: 60px;
+	height: 60px;
+}
+.Dashboard_members_dot:nth-child(22) {
+	left: 27%;
+	top: 0;
+	-webkit-animation-delay: 1900ms;
+	animation-delay: 1900ms;
+}
+.Dashboard_members_dot:nth-child(23) {
+	left: 32%;
+	top: 0;
+	-webkit-animation-delay: 900ms;
+	animation-delay: 900ms;
+}
+.Dashboard_members_dot:nth-child(24) {
+	left: 44%;
+	top: 0;
+	-webkit-animation-delay: 1700ms;
+	animation-delay: 1700ms;
+}
+.Dashboard_members_dot:nth-child(25) {
+	left: 14%;
+	top: 0;
+	-webkit-animation-delay: 2200ms;
+	animation-delay: 2200ms;
+}
+.group .Dashboard_members_dot:nth-child(25) .Member {
+	width: 60px;
+	height: 60px;
+}
+.Dashboard_members_dot:nth-child(26) {
+	left: 7%;
+	top: 0;
+	-webkit-animation-delay: 1500ms;
+	animation-delay: 1500ms;
+}
+.group2 .Dashboard_members_dot:nth-child(26) .Member {
+	width: 60px;
+	height: 60px;
+}
+.Dashboard_members_dot:nth-child(27) {
+	left: 23%;
+	top: 0;
+	-webkit-animation-delay: 1200ms;
+	animation-delay: 1000ms;
+}
+.Dashboard_members_dot:nth-child(28) {
+	left: 19%;
+	top: 0;
+	-webkit-animation-delay: 1200ms;
+	animation-delay: 700ms;
+}
+.Dashboard_members_dot:nth-child(29) {
+	left: 11%;
+	top: 0;
+	-webkit-animation-delay: 1200ms;
+	animation-delay: 1200ms;
+}
+.Dashboard_members_dot:nth-child(30) {
+	left: 5%;
+	top: 0;
+	-webkit-animation-delay: 500ms;
+	animation-delay: 500ms;
+}
+.Dashboard_members_dot:nth-child(31) {
+	left: 15%;
+	top: 0;
+	-webkit-animation-delay: 1200ms;
+	animation-delay: 1200ms;
+}
+.Dashboard_members_dot:nth-child(32) {
+	left: 10%;
+	top: 0;
+	-webkit-animation-delay: 1400ms;
+	animation-delay: 700ms;
+}
+
+/* .Dashboard_members_dot:nth-child(15) .Member {
+	-webkit-animation-delay: 400ms;
+	animation-delay: 400ms;
+} */
+
+@media only screen and (max-width: 769px) {
+	@-webkit-keyframes cascade-down {
+		0% {
+			transform: translateY(0, -8px);
+			opacity: 1;
+		}
+		90% {
+			/* transform: translateY(0, -8px); */
+			opacity: 1;
+		}
+		100% {
+			transform: translate(0, 68vh);
+			opacity: 0;
+		}
+	}
+	@keyframes cascade-down {
+		0% {
+			transform: translateY(0, -8px);
+			opacity: 1;
+		}
+		90% {
+			/* transform: translateY(0, -8px); */
+			opacity: 1;
+		}
+		100% {
+			transform: translate(0, 590px);
+			opacity: 0;
+		}
+	}
+
+	.Member {
+		width: 25px;
+		height: 25px;
+	}
+
+	.Dashboard {
+		min-height: 600px;
+	}
+
+	.group .Dashboard_members_dot:nth-child(1) .Member {
+		width: 40px;
+		height: 40px;
+	}
+	.group2 .Dashboard_members_dot:nth-child(26) .Member {
+		width: 40px;
+		height: 40px;
+	}
+	.group .Dashboard_members_dot:nth-child(25) .Member {
+		width: 40px;
+		height: 40px;
+	}
+	.group .Dashboard_members_dot:nth-child(21) .Member {
+		width: 40px;
+		height: 40px;
+	}
+	.group .Dashboard_members_dot:nth-child(19) .Member {
+		width: 40px;
+		height: 40px;
+	}
+	.group .Dashboard_members_dot:nth-child(13) .Member {
+		width: 40px;
+		height: 40px;
+	}
+	.group2 .Dashboard_members_dot:nth-child(12) .Member {
+		width: 40px;
+		height: 40px;
+	}
+	.group2 .Dashboard_members_dot:nth-child(3) .Member {
+		width: 40px;
+		height: 40px;
+	}
+}

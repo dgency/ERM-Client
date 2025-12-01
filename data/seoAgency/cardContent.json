@@ -1,0 +1,54 @@
+{
+	"head_message": {
+		"heading1": "Unlock Content Excellence and",
+		"heading2": "Drive Outstanding SEO Performance",
+		"text_line": "We've cracked the code for creating top-notch content across various platforms, helping you connect with your customers everywhere. Plus, our escape room industry expertise ensures we deliver exactly what they're looking for."
+	},
+	"cards": [
+		{
+			"id": 1,
+			"title": "Blog Posts",
+			"image": "blog-posts-escape-room-marketer.svg"
+		},
+		{
+			"id": 2,
+			"title": "Infographics",
+			"image": "infographics-escape-room-marketer.svg"
+		},
+		{
+			"id": 3,
+			"title": "Checklists",
+			"image": "checklists-escape-room-marketer.svg"
+		},
+		{
+			"id": 4,
+			"title": "Social Media Posts",
+			"image": "eBooks-escape-room-marketer.svg"
+		},
+		{
+			"id": 5,
+			"title": "Landing Pages",
+			"image": "whitepapers-escape-room-marketer.svg"
+		},
+		{
+			"id": 6,
+			"title": "Case Studies",
+			"image": "case-studies-escape-room-marketer.svg"
+		},
+		{
+			"id": 7,
+			"title": "Reviews",
+			"image": "reviews-escape-room-marketer.svg"
+		},
+		{
+			"id": 8,
+			"title": "How-to Guides",
+			"image": "how-to-guides-escape-room-marketer.svg"
+		},
+		{
+			"id": 9,
+			"title": "Guest Posts",
+			"image": "guest-posts-escape-room-marketer.svg"
+		}
+	]
+}

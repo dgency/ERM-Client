@@ -1,0 +1,24 @@
+{
+	"head_message": {
+		"heading": "A Digital Marketing Agency With Content At Its Core",
+		"text_line": "Whether you're looking for assets for social media, new designs for display ads, or a killer landing page to convert prospects, at KlientBoost we do it all."
+	},
+
+	"card_content": [
+			{
+				"heading": "Digital Marketing Winners",
+				"pera": "With over 300 case studies & 750+ 5 star reviews, we’ll take your PPC advertising & ad campaigns to the next level. Get new digital marketing wins with us.",
+				"image": "ppcAgency/digital-marketing-outperforms-escape-room-marketer.svg"
+			},
+			{
+				"heading": "Web Design + Social Media",
+				"pera": "Be more confident with your Google Ads (aka AdWords), social media, and eCommerce ad campaigns when you work with the best team that has the best tools.",
+				"image": "contentMarketingAgency/webdesign-social-media-escape-room-marketer.svg"
+			},
+			{
+				"heading": "Stronger Marketing Plans",
+				"pera": "Take your PPC campaigns higher beyond paid search. Achieve your SaaS, lead gen, or eCommerce goals through ad campaigns on the leading social media platforms.",
+				"image": "contentMarketingAgency/stronger-marketing-plans-escape-room-marketer.svg"
+			}
+		]
+}

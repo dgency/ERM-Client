@@ -1,0 +1,25 @@
+{
+	"head_message": {
+		"heading1": "High-Converting Escape Room Websites That Attract",
+		"heading2": "More Visitors and Generate More Bookings",
+		"text_line": "We dive deep into the escape room world to create stunning web experiences that are as thrilling as your escape room games."
+	},
+
+	"card_content": [
+		{
+			"heading": "Conversion Focused",
+			"pera": "Our Da Vinci-Level, high-converting web design turns visitors into paying customers, ensuring you get more bookings.",
+			"image": "landingPageDesign/a-b-testing-landing-page-escape-room-marketer.svg"
+		},
+		{
+			"heading": "Industry Knowledge",
+			"pera": "We understand the industry inside and out, ensuring your website resonates with both enthusiasts and first-timers.",
+			"image": "landingPageDesign/no-uses-ready-template-escape-room-marketer.svg"
+		},
+		{
+			"heading": "Marketing Savvy",
+			"pera": "We maximize marketing efforts through data-driven strategies, delivering the return on investment you deserve.",
+			"image": "landingPageDesign/landing-page-love-escape-room-marketer.svg"
+		}
+	]
+}

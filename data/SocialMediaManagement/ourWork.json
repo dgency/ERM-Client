@@ -1,0 +1,24 @@
+{
+	"head_message": {
+		"heading": "We Manage Your PPC Campaigns So You Don't Have To",
+		"text_line": "Stop trying to guess what metrics mean and trying to figure out why your PPC ads aren't performing as well as your social media ads. Let us manage your ad campaigns so you can work on other things."
+	},
+
+	"card_content": [
+			{
+				"heading": "PPC Advertising Winners",
+				"pera": "With over 300 case studies & 750+ 5 star reviews, we’ll take your PPC advertising & ad campaigns to the next level. Get new digital marketing wins with us.",
+				"image": "ppcAgency/digital-marketing-outperforms-escape-room-marketer.svg"
+			},
+			{
+				"heading": "Campaign Management",
+				"pera": "Be more confident with your Google Ads (aka AdWords), social media, and eCommerce ad campaigns when you work with the best team that has the best tools.",
+				"image": "ppcManagement/campaign-management-escape-room-marketer.svg"
+			},
+			{
+				"heading": "Keyword Research + More",
+				"pera": "Take your PPC campaigns higher beyond paid search. Achieve your SaaS, lead gen, or eCommerce goals through ad campaigns on the leading social media platforms.",
+				"image": "semAgency/seo-services-much-more-escape-room-marketer.svg"
+			}
+		]
+}

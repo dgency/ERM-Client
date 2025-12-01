@@ -1,0 +1,25 @@
+{
+	"head_message": {
+		"heading1": "Escape the Guesswork of Email Marketing,",
+		"heading2": "Never Leave Money on the Table",
+		"text_line": "Let us unlock the full potential of your escape room email marketing and boost revenue with proven strategies."
+	},
+
+	"card_content": [
+		{
+			"heading": "Happy Repeat Customers",
+			"pera": "We don't let your email list get bored, ensuring past customers crave escape room adventures more.",
+			"image": "emailMarketingAgency/interactive-emails-escape-room-marketer.svg"
+		},
+		{
+			"heading": "Perfectly Timed Emails",
+			"pera": "We've perfected timely emails, keeping subscribers eager for their next escape room adventure year-round.",
+			"image": "emailMarketingAgency/full-service-digital-marketing-escape-room-marketer.svg"
+		},
+		{
+			"heading": "Open, Click, Amaze!",
+			"pera": "Our proven strategies guarantee opens, jaw-dropping reactions, and website visits to generate bookings.",
+			"image": "emailMarketingAgency/marketing-automation-escape-room-marketer.svg"
+		}
+	]
+}

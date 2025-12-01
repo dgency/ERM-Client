@@ -1,0 +1,176 @@
+{
+	"head_message": {
+		"heading1": "Leverage Every SEO Opportunity",
+		"heading2": "For Unrivaled Online Visibility",
+		"text_line": "Achieving top-notch SEO results isn't a lucky coincidence. With our careful and methodical approach, your website will climb in search engine rankings, leaving your competition in the dust."
+	},
+	"side_img": {
+		"left_img": "seoAgency/seo-agency-list-left-escape-room-marketer.svg",
+		"right_img": "seoAgency/seo-agency-list-right-escape-room-marketer.svg"
+	},
+	"list_one": [
+		{
+			"id": 1,
+			"list": "SEO Audit",
+			"tooltip": "A thorough review of your website's health and performance to uncover areas for improvement and boost its visibility on search engines."
+		},
+		{
+			"id": 2,
+			"list": "Keyword Research",
+			"tooltip": "Identifying the words people use to search for escape rooms, birthday parties, team building, and corporate events, ensuring your content matches their queries and gets found easily."
+		},
+		{
+			"id": 3,
+			"list": "Competitor Analysis",
+			"tooltip": "Evaluating your rivals' online strategies to learn from their successes and refine your own approach."
+		},
+		{
+			"id": 4,
+			"list": "Creation of Original Content",
+			"tooltip": "Crafting fresh, unique articles that engage your audience and establish your Unique Selling Point (USP)."
+		},
+		{
+			"id": 5,
+			"list": "Creative (& Clever) Copywriting",
+			"tooltip": "Writing compelling and imaginative text that captures attention and persuades visitors to book your escape games."
+		},
+		{
+			"id": 6,
+			"list": "Content Optimization",
+			"tooltip": "Enhancing your content to align with search engine requirements, helping it rank higher and reach a wider audience."
+		},
+		{
+			"id": 7,
+			"list": "Omnichannel Content Distribution",
+			"tooltip": "Sharing your content across various platforms to reach potential customers on their preferred channels."
+		},
+		{
+			"id": 8,
+			"list": "Custom Graphic Design",
+			"tooltip": "Crafting eye-catching visuals that complement your content, making it more appealing and shareable."
+		},
+		{
+			"id": 9,
+			"list": "On-Page Optimization",
+			"tooltip": "Tweaking various elements on your website to improve its visibility and user experience."
+		},
+		{
+			"id": 10,
+			"list": "Off-Page Optimization",
+			"tooltip": "Boosting your website's authority and credibility by getting quality backlinks from other reputable sites."
+		},
+		{
+			"id": 11,
+			"list": "Conversion Rate Optimization",
+			"tooltip": "Tweaking your website to encourage more visitors to take desired actions, like booking games, ultimately increasing the conversion rate."
+		},
+		{
+			"id": 12,
+			"list": "User Experience Improvement",
+			"tooltip": "Enhancing your website's layout and features to provide a seamless and enjoyable experience for visitors."
+		},
+		{
+			"id": 13,
+			"list": "Mobile-Friendly Optimization",
+			"tooltip": "Adjusting your website to look and work well on every mobile device, catering to the growing mobile user base."
+		},
+		{
+			"id": 14,
+			"list": "Page Speed Optimization",
+			"tooltip": "Enhancing your website's loading time to ensure visitors don't get frustrated and leave due to slow loading."
+		},
+		{
+			"id": 15,
+			"list": "Increased On-Site Time",
+			"tooltip": "Keeping visitors engaged on your site for longer, helping improve their understanding of your adventure offerings."
+		},
+		{
+			"id": 16,
+			"list": "Bounce Rate Minimization",
+			"tooltip": "Reducing the number of visitors who leave your site quickly, improving its credibility and user experience."
+		}
+	],
+
+	"list_two": [
+		{
+			"id": 1,
+			"list": "Editorial Calendar Strategies",
+			"tooltip": "Planning and scheduling your content creation to maintain a consistent and engaging online presence."
+		},
+		{
+			"id": 2,
+			"list": "Internal Linking Improvement",
+			"tooltip": "Connecting different pages within your website, guiding visitors to relevant content and boosting search engine ranking."
+		},
+		{
+			"id": 3,
+			"list": "Link Building",
+			"tooltip": "Acquiring quality backlinks from reputable sites to increase your website's authority and search engine ranking."
+		},
+		{
+			"id": 4,
+			"list": "Better Click-Through Rate (CTR)",
+			"tooltip": "Crafting compelling headlines and descriptions to encourage more users to click on your search engine links."
+		},
+		{
+			"id": 5,
+			"list": "Schema Markup Implementation",
+			"tooltip": "Adding code to your website to provide search engines with additional context about your content, enhancing its visibility."
+		},
+		{
+			"id": 6,
+			"list": "Local SEO Rank Tracking",
+			"tooltip": "Monitoring your local search engine rankings to ensure your business appears prominently in local searches."
+		},
+		{
+			"id": 7,
+			"list": "Google Business Profile Optimization",
+			"tooltip": "Enhancing your Google Business profile to increase your visibility in local searches."
+		},
+		{
+			"id": 8,
+			"list": "XML Sitemap Creation",
+			"tooltip": "Generating a map of your website's structure to help search engines understand and index your pages effectively."
+		},
+		{
+			"id": 9,
+			"list": "Robots.txt Optimization",
+			"tooltip": "Configuring the robots.txt file to guide search engines on which pages to crawl and index."
+		},
+		{
+			"id": 10,
+			"list": "Canonicalization Setup",
+			"tooltip": "Specifying the preferred version of a webpage to avoid duplicate content issues."
+		},
+		{
+			"id": 11,
+			"list": "Robust Analytics Tracking Setup",
+			"tooltip": "Implementing advanced tracking tools to gather detailed data about user behavior on your website."
+		},
+		{
+			"id": 12,
+			"list": "Voice Search Optimization",
+			"tooltip": "Tailoring your content to match the way people speak when using voice search devices."
+		},
+		{
+			"id": 13,
+			"list": "Video SEO Optimization",
+			"tooltip": "Optimizing your videos to appear in search results, enhancing their visibility and engagement."
+		},
+		{
+			"id": 14,
+			"list": "FAQ Structuring",
+			"tooltip": "Organizing frequently asked questions in a user-friendly manner, providing quick and helpful answers."
+		},
+		{
+			"id": 15,
+			"list": "Rich Snippet Implementation",
+			"tooltip": "Adding structured data to your content to make it stand out in search results and provide extra information."
+		},
+		{
+			"id": 16,
+			"list": "High-Converting Popups",
+			"tooltip": "Creating compelling and relevant popups that encourage visitors to take specific actions, boosting conversions."
+		}
+	]
+}

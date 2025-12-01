@@ -1,0 +1,55 @@
+{
+    "head_message": {
+		"heading": "You Could Choose Any Team With Zero Proven Results. But Why Would You?",
+		"text_line": "We’ve worked hard to produce over 200 published case studies, 600+ reviews, and plenty of video testimonials. You should see them."
+	},
+    "companies":[
+        {
+            "id":1,
+            "image":"CaseStudyThumbnail-Airbnb.webp"
+            
+        },
+        {
+            "id":2,
+            "image":"CaseStudyThumbnail-JuniperNetworks.webp"
+            
+        },
+        {
+            "id":3,
+            "image":"CaseStudyThumbnail-Autopilot.webp"
+           
+        },
+        {
+            "id":4,
+            "image":"CaseStudyThumbnail-Mavenlink.webp"
+        
+        },
+        {
+            "id":5,
+            "image":"CaseStudyThumbnail-Gorjana.webp"
+           
+        },
+        {
+            "id":6,
+            "image":"CaseStudyThumbnail-Segment.webp"
+           
+        },
+        {
+            "id":7,
+            "image":"CaseStudyThumbnail-Stanford.webp"
+           
+        },
+        {
+            "id":8,
+            "image":"CaseStudyThumbnail-AlertLogic.webp"
+         
+        },
+        {
+            "id":9,
+            "image":"CaseStudyThumbnail-Base.webp"
+           
+        }
+    ]
+
+}
+ 

@@ -1,0 +1,116 @@
+{
+	"head_message": {
+		"heading1": "Transform Email Marketing Challenges Into",
+		"heading2": "Success with Our List of Improvements",
+		"text_line": "Leave email worries behind with our proven approach. Our comprehensive strategy delights your audience, boosts engagement, and drives bookings."
+	},
+	"side_img": {
+		"left_img": "emailMarketingAgency/email-marketing-agency-list-left-escape-room-marketer.svg",
+		"right_img": "emailMarketingAgency/email-marketing-agency-list-right-escape-room-marketer.svg"
+	},
+	"list_one": [
+		{
+			"id": 1,
+			"list": "Copywriting Research",
+			"tooltip": "Improve the effectiveness of your email content by conducting research on what resonates with your audience."
+		},
+		{
+			"id": 2,
+			"list": "Conversion Design",
+			"tooltip": "Enhance the layout and elements of your emails to encourage recipients to take desired actions, such as booking escape rooms."
+		},
+		{
+			"id": 3,
+			"list": "List Segmentation",
+			"tooltip": "Divide your email list into specific groups based on demographics, behavior, or preferences to send more relevant content."
+		},
+		{
+			"id": 4,
+			"list": "Personalization",
+			"tooltip": "Tailor your email content to individual recipients, addressing them by name and offering personalized recommendations."
+		},
+		{
+			"id": 5,
+			"list": "Subject Line Improvements",
+			"tooltip": "Craft compelling subject lines to increase email open rates and grab recipients' attention."
+		},
+		{
+			"id": 6,
+			"list": "Open Rate Increasing",
+			"tooltip": "Implement strategies to boost the number of recipients who open your emails, increasing campaign visibility."
+		},
+		{
+			"id": 7,
+			"list": "Deliverability Improvements",
+			"tooltip": "Optimize your email delivery practices to ensure your emails reach recipients' inboxes, not spam folders."
+		},
+		{
+			"id": 8,
+			"list": "List Hygiene",
+			"tooltip": "Regularly clean and update your email list to remove inactive or incorrect email addresses and maintain list health."
+		},
+		{
+			"id": 9,
+			"list": "Behavioral Email Triggers",
+			"tooltip": "Automatically send emails based on recipient behavior, such as abandoned bookings or past interactions."
+		},
+		{
+			"id": 10,
+			"list": "Prospect Targeting",
+			"tooltip": "Focus on high-potential leads and refine your email campaigns to target them effectively."
+		}
+	],
+
+	"list_two": [
+		{
+			"id": 1,
+			"list": "Conversion Improvements",
+			"tooltip": "Continuously refine your email content, design, and strategies to drive more conversions and revenue."
+		},
+		{
+			"id": 2,
+			"list": "HTML Emails",
+			"tooltip": "Design visually appealing emails with rich content to leave a lasting impression on recipients."
+		},
+		{
+			"id": 3,
+			"list": "Real-time Email Triggers",
+			"tooltip": "Implement triggers based on user actions to send timely and relevant email content."
+		},
+		{
+			"id": 4,
+			"list": "Email Automation Efficiency",
+			"tooltip": "Streamline your email automation workflows to save time and resources while maintaining effectiveness."
+		},
+		{
+			"id": 5,
+			"list": "A/B Testing Frequency",
+			"tooltip": "Experiment with the frequency of A/B tests to find the optimal testing cadence for your audience."
+		},
+		{
+			"id": 6,
+			"list": "SPAM Avoidance",
+			"tooltip": "Ensure your emails comply with spam regulations and best practices to maintain a positive sender reputation."
+		},
+		{
+			"id": 7,
+			"list": "Bounce Rate Improvements",
+			"tooltip": "Reduce email bounce rates by cleaning your list and maintaining data accuracy."
+		},
+		{
+			"id": 8,
+			"list": "Custom Landing Pages",
+			"tooltip": "Create dedicated landing pages for email campaigns to provide a seamless user experience."
+		},
+		{
+			"id": 9,
+			"list": "Gamification Elements",
+			"tooltip": "Incorporate gamification elements within emails to increase engagement and interaction."
+		},
+		{
+			"id": 10,
+			"list": "CRM Connections",
+			"tooltip": "Integrate your email marketing efforts with Customer Relationship Management (CRM) systems for better data management and customer insights."
+		}
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"head_message": {
+		"heading": "Search Engine Marketing That Brings In The Wins",
+		"text_line": "We're a full-service digital marketing agency with a knack for SEM. We create marketing campaigns on PPC and social media platforms that result in clicks, phones, and dollars."
+	},
+
+	"card_content": [
+			{
+				"heading": "Digital Marketing That Outperforms",
+				"pera": "With over 300 case studies & 750+ 5 star reviews, we’ll take your PPC advertising & ad campaigns to the next level. Get new digital marketing wins with us.",
+				"image": "ppcAgency/digital-marketing-outperforms-escape-room-marketer.svg"
+			},
+			{
+				"heading": "Keyword Research + Ad Copy Tools",
+				"pera": "Be more confident with your Google Ads (aka AdWords), social media, and eCommerce ad campaigns when you work with the best team that has the best tools.",
+				"image": "semAgency/seo-services-much-more-escape-room-marketer.svg"
+			},
+			{
+				"heading": "Social Media + eCommerce Growth",
+				"pera": "Take your PPC campaigns higher beyond paid search. Achieve your SaaS, lead gen, or eCommerce goals through ad campaigns on the leading social media platforms.",
+				"image": "googleAdsAgency/ad-copy-creative-flair-escape-room-marketer.svg"
+			}
+		]
+}

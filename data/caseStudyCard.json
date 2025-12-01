@@ -1,0 +1,40 @@
+{
+	"case_card": [
+		{
+			"id": 1,
+			"category": "PAID SEARCH AND SOCIAL",
+			"title": "Le Tote Scales Search & Display To Profitable Heights",
+			"slug": "case-study1"
+		},
+		{
+			"id": 2,
+			"category": "PAID SEARCH AND SOCIAL",
+			"title": "Le Tote Scales Search & Display To Profitable Heights",
+			"slug": "case-study2"
+		},
+		{
+			"id": 3,
+			"category": "PAID SEARCH AND SOCIAL",
+			"title": "Le Tote Scales Search & Display To Profitable Heights",
+			"slug": "case-study3"
+		},
+		{
+			"id": 4,
+			"category": "PAID SEARCH AND SOCIAL",
+			"title": "Le Tote Scales Search & Display To Profitable Heights",
+			"slug": "case-study4"
+		},
+		{
+			"id": 5,
+			"category": "PAID SEARCH AND SOCIAL",
+			"title": "Le Tote Scales Search & Display To Profitable Heights",
+			"slug": "case-study5"
+		},
+		{
+			"id": 6,
+			"category": "PAID SEARCH AND SOCIAL",
+			"title": "Le Tote Scales Search & Display To Profitable Heights",
+			"slug": "case-study6"
+		}
+	]
+}

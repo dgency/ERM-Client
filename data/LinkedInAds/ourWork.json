@@ -1,0 +1,24 @@
+{
+	"head_message": {
+		"heading": "Link Building From SEO Experts",
+		"text_line": "Why is link building important? It increases the number of links to your page through referral traffic which raises your ranking in the SERP."
+	},
+
+	"card_content": [
+			{
+				"heading": "The Absolute Best SEO Experts",
+				"pera": "With over 300 case studies & 750+ 5 star reviews, we’ll take your PPC advertising & ad campaigns to the next level. Get new digital marketing wins with us.",
+				"image": "linkBuildingService/the-metrics-that-matter-escape-room-marketer.svg"
+			},
+			{
+				"heading": "Marketing Strategy Wins",
+				"pera": "Be more confident with your Google Ads (aka AdWords), social media, and eCommerce ad campaigns when you work with the best team that has the best tools.",
+				"image": "linkBuildingService/link-building-strategies-escape-room-marketer.svg"
+			},
+			{
+				"heading": "A Multitude Of SEO Services",
+				"pera": "Take your PPC campaigns higher beyond paid search. Achieve your SaaS, lead gen, or eCommerce goals through ad campaigns on the leading social media platforms.",
+				"image": "linkBuildingService/increase-seo-rankings-escape-room-marketer.svg"
+			}
+		]
+}

@@ -1,0 +1,25 @@
+{
+	"head_message": {
+		"heading1": "Full-Service Google Ads Agency",
+		"heading2": "That Turns Clicks Into Bookings",
+		"text_line": "Experience the magic of our Google Ads expertise – watch clicks morph into bookings, revenue increase, and your escape room business thrive. It's a wizardry that fills your game rooms and pockets!"
+	},
+
+	"card_content": [
+		{
+			"heading": "Google Ads That Win",
+			"pera": "We craft compelling ads for more bookings and revenue, giving your business the spotlight it deserves with our strategic Google Ads management.",
+			"image": "googleAdsAgency/digital-marketing-outperforms-escape-room-marketer.svg"
+		},
+		{
+			"heading": "Engaging Remarketing Ads",
+			"pera": "Let's follow your previous website visitors across the web with our creative Display and YouTube ads, ensuring your business stays on top of their minds.",
+			"image": "facebookAdsAgency/social-media-mastery-escape-room-marketer.svg"
+		},
+		{
+			"heading": "Embrace Ultra Creativity",
+			"pera": "Leverage data-driven creativity to dominate the escape room advertising world, creating irresistible advertisements that engage and drive more bookings",
+			"image": "googleAdsAgency/ad-copy-creative-flair-escape-room-marketer.svg"
+		}
+	]
+}

@@ -1,0 +1,37 @@
+{
+	"head_message": {
+		"heading": "You Know Your Needs Best, We’ll Design A Conversion Solution For That",
+		"text_line": "We can help whether you need landing page advice, hand-holding, or just want to turn everything over to us."
+	},
+
+	"card_content": {
+		"first_card": {
+			"heading": "Landing Page Management",
+			"pera": "We’ll handle all your content marketing and report the performance directly to you.",
+			"image": "/Ongoing Expert Management-escape-room-marketer.svg"
+		},
+
+		"others_card": [
+			{
+				"heading": "Landing Page Audit",
+				"pera": "We’ll give you a prioritized list of new experiments that you run.",
+				"image": "/Deep One-Time Audit-escape-room-marketer.svg"
+			},
+			{
+				"heading": "Landing Page Consulting",
+				"pera": "Avoid expensive mistakes and wasted time. Let us build it for you.",
+				"image": "/Strong One-Time Setup-escape-room-marketer.svg"
+			},
+			{
+				"heading": "One-Time Landing Page Build",
+				"pera": "We’ll give you the ongoing strategies and tactics for you to implement to increase metrics.",
+				"image": "/Ongoing-Consulting-escape-room-marketer-01.svg"
+			},
+			{
+				"heading": "Pure Landing Page Performance",
+				"pera": "Revenue share agreement with more upside for us, less risk for you.",
+				"image": "/Pure Performanceescape-room-marketer.svg"
+			}
+		]
+	}
+}

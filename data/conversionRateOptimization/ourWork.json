@@ -1,0 +1,24 @@
+{
+	"head_message": {
+		"heading": "We've Spent Years Mastering Conversion Rate Optimization So You Don't Have To",
+		"text_line": "We don't design willy nilly. We a/b test, study conversion funnels, obsess over metrics and create a user experience that converts."
+	},
+
+	"card_content": [
+			{
+				"heading": "Landing Pages That Convert",
+				"pera": "With over 300 case studies & 750+ 5 star reviews, we’ll take your PPC advertising & ad campaigns to the next level. Get new digital marketing wins with us.",
+				"image": "conversionRateOptimization/landing-pages-that-convert-escape-room-marketer.svg"
+			},
+			{
+				"heading": "CRO Strategies That Win",
+				"pera": "Be more confident with your Google Ads (aka AdWords), social media, and eCommerce ad campaigns when you work with the best team that has the best tools.",
+				"image": "conversionRateOptimization/cro-strategies-escape-room-marketer.svg"
+			},
+			{
+				"heading": "Highest Conversions Rates",
+				"pera": "Take your PPC campaigns higher beyond paid search. Achieve your SaaS, lead gen, or eCommerce goals through ad campaigns on the leading social media platforms.",
+				"image": "conversionRateOptimization/highest-conversions-rates-escape-room-marketer.svg"
+			}
+		]
+}

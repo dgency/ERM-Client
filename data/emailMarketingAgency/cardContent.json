@@ -1,0 +1,54 @@
+{
+	"head_message": {
+		"heading1": "We’ll Improve Every Email You Send",
+		"heading2": "To Win The Inbox Marketing Game",
+		"text_line": "Get ready to witness our email marketing wizardry with the data-driven approach that consistently generates bookings throughout the year."
+	},
+	"cards": [
+		{
+			"id": 1,
+			"title": "Reconnect with Lost Bookings",
+			"image": "emailMarketingAgency/cold-outbound-emails-marketer-escape-room-marketer.svg"
+		},
+		{
+			"id": 2,
+			"title": "Win Back Existing Customers",
+			"image": "emailMarketingAgency/nurture-sequence-emails-escape-room-marketer.svg"
+		},
+		{
+			"id": 3,
+			"title": "Holiday Gift Ideas",
+			"image": "emailMarketingAgency/abandoned-cart-emails-escape-room-marketer.svg"
+		},
+		{
+			"id": 4,
+			"title": "Seasonal Promotions",
+			"image": "emailMarketingAgency/newsletter-emails-escape-room-marketer.svg"
+		},
+		{
+			"id": 5,
+			"title": "Birthday Party Specials",
+			"image": "emailMarketingAgency/transactional-emails-escape-room-marketer.svg"
+		},
+		{
+			"id": 6,
+			"title": "Team Building Packages",
+			"image": "emailMarketingAgency/promotional-emails-escape-room-marketer.svg"
+		},
+		{
+			"id": 7,
+			"title": "Customer Testimonials",
+			"image": "emailMarketingAgency/inbound-emails-escape-room-marketer.svg"
+		},
+		{
+			"id": 8,
+			"title": "Mystery Email Series",
+			"image": "emailMarketingAgency/upsell-cross-sell-emails-escape-room-marketer.svg"
+		},
+		{
+			"id": 9,
+			"title": "Storytelling Campaigns",
+			"image": "emailMarketingAgency/continuation-emails-escape-room-marketer.svg"
+		}
+	]
+}

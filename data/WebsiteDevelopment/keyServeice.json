@@ -1,0 +1,38 @@
+{
+	"head_message": {
+		"heading1": "Escape Room Aficionados, Web Design Virtuoso",
+		"heading2": "",
+		"text_line": "We can do everything for you (like a helicopter parent), provide valuable advice (like a rich uncle), and everything in between to upgrade your web design."
+	},
+
+	"card_content": {
+		"first_card": {
+			"heading": "Website Management",
+			"pera": "With data and research, we'll continually build and split-test your site for higher performance.",
+			"image": "/Ongoing Expert Management-escape-room-marketer.svg"
+		},
+
+		"others_card": [
+			{
+				"heading": "One-Time Website Audit",
+				"pera": "We'll look at traffic sources and web page anatomies and give you insightful advice.",
+				"image": "/Deep One-Time Audit-escape-room-marketer.svg"
+			},
+			{
+				"heading": "Website Consulting",
+				"pera": "We'll help your internal web team prioritize future web design optimization.",
+				"image": "/Strong One-Time Setup-escape-room-marketer.svg"
+			},
+			{
+				"heading": "One-Time Website Build",
+				"pera": "Like a mama bird, get everything you need to succeed. Then we'll push you out of the nest.",
+				"image": "/Ongoing-Consulting-escape-room-marketer-01.svg"
+			},
+			{
+				"heading": "Pure Website Performance",
+				"pera": "Longer-term commitment where you pay us purely based off performance lifts.",
+				"image": "/Pure Performanceescape-room-marketer.svg"
+			}
+		]
+	}
+}

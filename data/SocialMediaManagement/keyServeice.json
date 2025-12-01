@@ -1,0 +1,37 @@
+{
+	"head_message": {
+		"heading": "Reach Your SEM Goals On Your Timeline, We Adjust Our Pace To Meet Your Needs",
+		"text_line": "We want what’s best for you, so we provide lots of flexible options to work with us."
+	},
+
+	"card_content": {
+		"first_card": {
+			"heading": "Ongoing SEM Management",
+			"pera": "Free your time, accelerate your results. We’ll take care of everything and report to you.",
+			"image": "/Ongoing Expert Management-escape-room-marketer.svg"
+		},
+
+		"others_card": [
+			{
+				"heading": "One-Time SEM Audit",
+				"pera": "We’ll give you a prioritized list of new experiments that you run.",
+				"image": "/Deep One-Time Audit-escape-room-marketer.svg"
+			},
+			{
+				"heading": "Strong SEM Setup",
+				"pera": "Avoid expensive mistakes and wasted time. Let us build it for you.",
+				"image": "/Strong One-Time Setup-escape-room-marketer.svg"
+			},
+			{
+				"heading": "Ongoing SEM Consulting",
+				"pera": "We’ll give you the ongoing strategies and tactics for you to implement to increase metrics.",
+				"image": "/Ongoing-Consulting-escape-room-marketer-01.svg"
+			},
+			{
+				"heading": "Pure SEM Performance",
+				"pera": "Revenue share agreement with more upside for us, less risk for you.",
+				"image": "/Pure Performanceescape-room-marketer.svg"
+			}
+		]
+	}
+}

@@ -1,0 +1,38 @@
+{
+	"head_message": {
+		"heading1": "Choose Your Google Ads Journey",
+		"heading2": "Your Business, Your Rules",
+		"text_line": "Tailor your path to align with your business goals. Whether you want to accelerate your ad campaigns for quick results or take a steady, well-planned approach, we've got you covered."
+	},
+
+	"card_content": {
+		"first_card": {
+			"heading": "Ongoing Google Ads Management",
+			"pera": "Sit back as we expertly handle campaign management, while staying informed through detailed reports.",
+			"image": "/Ongoing Expert Management-escape-room-marketer.svg"
+		},
+
+		"others_card": [
+			{
+				"heading": "One-Time Google Ads Audit",
+				"pera": "Gain valuable insights and a roadmap for executing effective strategies to achieve outstanding results.",
+				"image": "/Deep One-Time Audit-escape-room-marketer.svg"
+			},
+			{
+				"heading": "One-Time Google Ads Setup",
+				"pera": "Let our experts handle the ad campaign setup so you can confidently launch your ads and avoid pitfalls.",
+				"image": "/Strong One-Time Setup-escape-room-marketer.svg"
+			},
+			{
+				"heading": "Ongoing Google Ads Consulting",
+				"pera": "We not only show you the way but also provide ongoing hands-on support as you execute our strategies.",
+				"image": "/Ongoing-Consulting-escape-room-marketer-01.svg"
+			},
+			{
+				"heading": "Google Ads Revenue Share",
+				"pera": "Forge a long-term, collaborative partnership where both parties are fully committed, sharing in the success.",
+				"image": "/Pure Performanceescape-room-marketer.svg"
+			}
+		]
+	}
+}

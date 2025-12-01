@@ -1,0 +1,68 @@
+{
+	"head_message": {
+		"heading": "Engage With Us On Your Terms. Hit Your Goals As Fast As You Want",
+		"text_line": "Go slow or go fast, we’ll make sure you’re ahead of your competition."
+	},
+	"companies": [
+		{
+			"id": 1,
+			"image": "ahrefs-escape-room-marketer.svg"
+		},
+		{
+			"id": 2,
+			"image": "bing-webmaster-tools-escape-room-marketer.svg"
+		},
+		{
+			"id": 3,
+			"image": "figma-escape-room-marketer.svg"
+		},
+		{
+			"id": 4,
+			"image": "google-ads-escape-room-marketer.svg"
+		},
+		{
+			"id": 5,
+			"image": "google-analytics-escape-room-marketer.svg"
+		},
+		{
+			"id": 6,
+			"image": "google-lighthouse-escape-room-marketer.svg"
+		},
+		{
+			"id": 7,
+			"image": "google-looker-studio-escape-room-marketer.svg"
+		},
+		{
+			"id": 8,
+			"image": "google-search-console-escape-room-marketer.svg"
+		},
+		{
+			"id": 9,
+			"image": "google-tag-manager-escape-room-marketer.svg"
+		},
+		{
+			"id": 10,
+			"image": "gt-matrix-escape-room-marketer.svg"
+		},
+		{
+			"id": 11,
+			"image": "html-escape-room-marketer.svg"
+		},
+		{
+			"id": 12,
+			"image": "microsoft-clarity-escape-room-marketer.svg"
+		},
+		{
+			"id": 13,
+			"image": "microsoft-escape-room-marketer.svg"
+		},
+		{
+			"id": 14,
+			"image": "semrush-escape-room-marketer.svg"
+		},
+		{
+			"id": 15,
+			"image": "Spyfu.svg"
+		}
+	]
+}

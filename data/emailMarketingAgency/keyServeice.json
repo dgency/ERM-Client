@@ -1,0 +1,38 @@
+{
+	"head_message": {
+		"heading1": "Choose From One-Time Audits",
+		"heading2": "To Done-For-You-Everything",
+		"text_line": "We tailor our escape room email marketing services to match your unique needs and goals. Which partnership suits you best?"
+	},
+
+	"card_content": {
+		"first_card": {
+			"heading": "Done-For-You-Everything",
+			"pera": "We take full ownership of your email marketing, delivering ongoing performance improvements.",
+			"image": "/Ongoing Expert Management-escape-room-marketer.svg"
+		},
+
+		"others_card": [
+			{
+				"heading": "Deep-Dive Email Audit",
+				"pera": "We provide a comprehensive list of email marketing improvements to increase customer retention.",
+				"image": "/Deep One-Time Audit-escape-room-marketer.svg"
+			},
+			{
+				"heading": "One-Time Email Setup",
+				"pera": "We build your email marketing engine and hand over the keys for you to drive consistent bookings.",
+				"image": "/Strong One-Time Setup-escape-room-marketer.svg"
+			},
+			{
+				"heading": "Continuous Email Consulting",
+				"pera": "We do the research and help prioritize the experiments while you set up email campaigns.",
+				"image": "/Ongoing-Consulting-escape-room-marketer-01.svg"
+			},
+			{
+				"heading": "Pure Email Performance",
+				"pera": "No upfront fees. Instead, we base our long-term partnership on the revenue we generate together.",
+				"image": "/Pure Performanceescape-room-marketer.svg"
+			}
+		]
+	}
+}

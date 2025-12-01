@@ -1,0 +1,24 @@
+{
+	"head_message": {
+		"heading": "The Only Facebooks Ads Agency You'll Ever Need",
+		"text_line": "Let us handle creating your Facebook Ads content. From photo, video, and animated formats, to writing clickable copy. We create ads that always convert."
+	},
+
+	"card_content": [
+			{
+				"heading": "Social Media Mastery",
+				"pera": "Get better performing Facebook ad campaigns with a stronger target audience, larger brand awareness, and killer ROI.",
+				"image": "facebookAdsAgency/social-media-mastery-escape-room-marketer.svg"
+			},
+			{
+				"heading": "Social Media Marketing Wins",
+				"pera": "Where else can you find a Facebook advertising agency with this many wins? Get the strongest marketing strategy in digital marketing.",
+				"image": "ppcAgency/digital-marketing-outperforms-escape-room-marketer.svg"
+			},
+			{
+				"heading": "Creative + Copywriting",
+				"pera": "Improve the performance of your eCommerce, SaaS, or lead-gen Facebook ad campaigns with our conversion creativity.",
+				"image": "facebookAdsAgency/creative-copywriting-escape-room-marketer.svg"
+			}
+		]
+}

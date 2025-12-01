@@ -1,0 +1,70 @@
+{
+    "head_message": {
+		"heading": "We Spent Hours Compiling The Best Questions & Our Favorite Answers, Enjoy",
+		"text_line": "Don’t see an answer to your question? Ask it during your free marketing plan."
+	},
+
+    "question_answer":[
+        {
+            "id":1,
+            "question":"Why would I use a Facebook ad agency rather than do it myself?",
+            "answer": "PPC (Pay Per Click) advertising or, paid ads, refer to ads created to list in search engines. Google Ads is the leading PPC channel for most businesses’ digital marketing strategies. Google Ads is a well-established tool that has an industry built around it. Elaborate SaaS tools and PPC agencies are well developed because so many people turn to PPC to drive their business goals. The ability to advertise for almost any search query is a powerful tool as users turn to search engines first to answer their questions. In less than a few hours, and with enough budget, you can begin sending relevant traffic to your site.  This is helpful for time-sensitive initiatives such as a seasonal campaign, a product launch, or a company opening. In addition to sending traffic to your site, a well-planned PPC program will also improve the quality of your site. As your quality increases, so does your ‘quality score’. A high-quality score indicates a more competitive site and decreases your PPC costs!" 
+        },
+        {
+            "id":2,
+            "question":"What to expect from a great Facebook ad company",
+            "answer": "When users have questions they turn to search engines to answer their questions.  The three channels that can be optimized to perform well in search are PPC, SEO, and Shopping. PPC uses Google Ads to create ads that are paid for to show at the best positions. Anyone with the will and the budget can earn traffic to their site in hours, if not minutes. This is a good option for time-sensitive traffic needs. An established PPC company, or PPC management agency, employs a myriad of strategies that can also be a reliable stream of traffic.SEO (Search Engine Optimization) on the other hand allows websites to rank in search engines for ‘free’. SEO is a long-term tactic that, when done correctly, will have lasting effects.  This too is an entire industry that has been built to develop competitive sites that have developed an authoritative niche in their industry."
+        },
+        {
+            "id":3,
+            "question":"What’s the typical contract length?",
+            "answer": "We reverse engineer that with you when we understand your goals and which marketing service you want help with when it comes to ads management.The answer will be learned from a combination of conversion volume, cost per conversion, and ROI you expect.For example for paid advertising, if you want 20 conversions per day and the average cost per conversion is $10, then your ad spend would need to be $200/day."
+        },
+        {
+            "id":4,
+            "question":"Who owns the data and creative?",
+            "answer": "Once we understand the type of marketing services you need help with and your specific goals, then we can create pricing options around timelines, strategies, and team sizes for you to decide."
+        },
+        {
+            "id":5,
+            "question":"Do you restrict access to my accounts?",
+            "answer": "We can start making some changes the first day after our kick off. Usually bigger launches take nothing longer than a few weeks."
+        },
+        {
+            "id":6,
+            "question":"Is your fee based on how much I spend each month?",
+            "answer": "When we take on your campaign management it can be immediate. For example, if we see that you’re bleeding money and it’s an easy fix, then we can improve that within a day.We set performance-based goals for all our clients upon timeframes we’re both excited about."  
+        },
+        {
+            "id":7,
+            "question":"How much should I be spending on advertising to work with you?",
+            "answer": "Consulting, setup, management, or performance-based relationships all have different expectations. Setup can be a one-time project and performance could be a longer-term partnership. If we set bigger goals with you, then you’ll see the contract length reference that." 
+        },
+        {
+            "id":8,
+            "question":"Do you specialize in Facebook Ads for a certain industry?",
+            "answer": "We will. For pay for performance to really work well for you, there a few things you need to consider. Will it require a brand new site? Will that site be approved by the ad platforms? Will we be able to work within your already live ad accounts? If so, then we’ll be a great fit."
+        },
+        {
+            "id":9,
+            "question":"Should I create a new account for you to use?",
+            "answer": "We can, and we do that by setting goals based off all our successful case studies and experiments with first party data.We can show you how when you get your free marketing plan."
+        },
+        {
+            "id":10,
+            "question":"Will I know how my ads are doing?",
+            "answer": "You can see all the examples during your free marketing plan review. We have different types of reporting for different types of businesses."
+        },
+        {
+            "id":11,
+            "question":"Are there extra fees for anything?",
+            "answer": "That’s determined through your marketing plan request once we know what marketing services you need help with and what your goals are. Then we can give you the timelines, strategies, and output in a more digestible format."
+        },
+        {
+            "id":12,
+            "question":"How many hours do you work on my account?",
+            "answer": "If your goals are more aggressive than average, then more hours will be needed. If you’re needing help with multiple marketing services at the same time, then more hours will be needed too. We don’t charge by the hour (we normally charge a monthly retainer), but we can give you an idea of what our hourly rate would be once we know more about your goals and needs."
+        }
+    
+    ]
+}

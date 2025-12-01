@@ -1,0 +1,38 @@
+{
+	"head_message": {
+		"heading1": "Find Your Perfect Fit: Start Small or",
+		"heading2": "Go Big with Our SEO Partnership",
+		"text_line": "One-size-fits-all is for baseball caps and parachute pants, that ain't us. Discover various affordable SEO services that match your pace and financial plan."
+	},
+
+	"card_content": {
+		"first_card": {
+			"heading": "Ongoing SEO Management",
+			"pera": "We handle your SEO tasks, allowing you to focus on growing your business.",
+			"image": "/Ongoing Expert Management-escape-room-marketer.svg"
+		},
+
+		"others_card": [
+			{
+				"heading": "One-Time SEO Audit",
+				"pera": "We analyze and provide a list of strategies to boost your organic ranking.",
+				"image": "/Deep One-Time Audit-escape-room-marketer.svg"
+			},
+			{
+				"heading": "One-Time SEO Setup",
+				"pera": "We'll fix and clean things up and ensure your future SEO direction is solid.",
+				"image": "/Strong One-Time Setup-escape-room-marketer.svg"
+			},
+			{
+				"heading": "Ongoing SEO Consulting",
+				"pera": "We'll meet regularly to ensure your in-house team continues to progress.",
+				"image": "/Ongoing-Consulting-escape-room-marketer-01.svg"
+			},
+			{
+				"heading": "Pure SEO Performance",
+				"pera": "Revenue split SEO partnership. Less risk for you, higher reward for us.",
+				"image": "/Pure Performanceescape-room-marketer.svg"
+			}
+		]
+	}
+}

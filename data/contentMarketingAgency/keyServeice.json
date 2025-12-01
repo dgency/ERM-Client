@@ -1,0 +1,37 @@
+{
+	"head_message": {
+		"heading": "Choose The Partnership That’s Best For You, Start Small or Go Big",
+		"text_line": "Pick from a variety of content marketing options that work for your budget and speed."
+	},
+
+	"card_content": {
+		"first_card": {
+			"heading": "Content Marketing Management",
+			"pera": "We’ll handle all your content marketing and report the performance directly to you.",
+			"image": "/Ongoing Expert Management-escape-room-marketer.svg"
+		},
+
+		"others_card": [
+			{
+				"heading": "One-Time Content Audit",
+				"pera": "We’ll give you a prioritized list of new experiments that you run.",
+				"image": "/Deep One-Time Audit-escape-room-marketer.svg"
+			},
+			{
+				"heading": "Frequent Content Consulting",
+				"pera": "Avoid expensive mistakes and wasted time. Let us build it for you.",
+				"image": "/Strong One-Time Setup-escape-room-marketer.svg"
+			},
+			{
+				"heading": "One-Time Content Setup",
+				"pera": "We’ll give you the ongoing strategies and tactics for you to implement to increase metrics.",
+				"image": "/Ongoing Consulting-escape-room-marketer.svg"
+			},
+			{
+				"heading": "Pure Content Performance",
+				"pera": "Revenue share agreement with more upside for us, less risk for you.",
+				"image": "/Pure Performanceescape-room-marketer.svg"
+			}
+		]
+	}
+}

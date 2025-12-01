@@ -1,0 +1,24 @@
+{
+	"head_message": {
+		"heading": "Landing Pages That Convert Every Time",
+		"text_line": "A dedicated landing page for your ad results in higher conversions and better CTRs. Give your audience a personalized experience with dedicated landing pages."
+	},
+
+	"card_content": [
+			{
+				"heading": "Landing Pages That Convert Every Time",
+				"pera": "With over 300 case studies & 750+ 5 star reviews, we’ll take your PPC advertising & ad campaigns to the next level. Get new digital marketing wins with us.",
+				"image": "landingPageAgency/ecommerce-landing-pages-escape-room-marketer.svg"
+			},
+			{
+				"heading": "Social Media Landing Pages",
+				"pera": "Be more confident with your Google Ads (aka AdWords), social media, and eCommerce ad campaigns when you work with the best team that has the best tools.",
+				"image": "landingPageAgency/social-media-landing-pages-escape-room-marketer.svg"
+			},
+			{
+				"heading": "Conversion Driven Research",
+				"pera": "Take your PPC campaigns higher beyond paid search. Achieve your SaaS, lead gen, or eCommerce goals through ad campaigns on the leading social media platforms.",
+				"image": "landingPageAgency/conversion-driven-research-escape-room-marketer.svg"
+			}
+		]
+}

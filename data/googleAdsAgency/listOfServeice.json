@@ -1,0 +1,206 @@
+{
+	"head_message": {
+		"heading1": "Get Comprehensive Google Ads Service,",
+		"heading2": "Your Master Key To Marketing Triumphs",
+		"text_line": "From keyword research that unlocks the door to your target audience, to ad copy that compels them to visit your website, and analytics that reveal hidden treasures of customer insights and revenue – our service covers it all."
+	},
+	"side_img": {
+		"left_img": "googleAdsAgency/google-ads-agency-list-left-escape-room-marketer.svg",
+		"right_img": "googleAdsAgency/google-ads-agency-list-right-escape-room-marketer.svg"
+	},
+	"list_one": [
+		{
+			"id": 1,
+			"list": "Keyword Research",
+			"tooltip": "Discovering the best keywords people use to find your escape rooms, helping your ads reach the right customers."
+		},
+		{
+			"id": 2,
+			"list": "Keyword Match Types",
+			"tooltip": "Setting rules for how closely searches must match your keywords before your ads appear."
+		},
+		{
+			"id": 3,
+			"list": "Single Keyword Ad Groups",
+			"tooltip": "Organizing ads to focus on one keyword for better control and relevance."
+		},
+		{
+			"id": 4,
+			"list": "Keyword Expansion",
+			"tooltip": "Finding and adding new keywords to improve ad reach and performance."
+		},
+		{
+			"id": 5,
+			"list": "Keyword Specific Bidding",
+			"tooltip": "Blocking keywords that aren't relevant to avoid showing your ads to the wrong audience."
+		},
+		{
+			"id": 6,
+			"list": "Negative Keyword Management",
+			"tooltip": "Blocking keywords that aren't relevant to avoid showing your ads to the wrong audience."
+		},
+		{
+			"id": 7,
+			"list": "Creative Ad Copywriting",
+			"tooltip": "Crafting engaging ads to attract escape room enthusiasts, families and corporate teams."
+		},
+		{
+			"id": 8,
+			"list": "Ad Copy Testing",
+			"tooltip": "Experimenting with different ad versions to see which works best."
+		},
+		{
+			"id": 9,
+			"list": "Responsive Search Ads",
+			"tooltip": "Ads that adapt to match search queries and user interests."
+		},
+		{
+			"id": 10,
+			"list": "Dynamic Search Ads",
+			"tooltip": "Creating ads based on your website content to reach relevant customers."
+		},
+		{
+			"id": 11,
+			"list": "Display Banner Ads",
+			"tooltip": "Visual ads that appear on news websites to catch people's attention."
+		},
+		{
+			"id": 12,
+			"list": "HTML5 Animated Ads",
+			"tooltip": "Interactive ads with animations to engage potential customers."
+		},
+		{
+			"id": 13,
+			"list": "Video Campaigns",
+			"tooltip": "Promoting your escape room through videos on platforms like YouTube"
+		},
+		{
+			"id": 14,
+			"list": "Remarketing Ads",
+			"tooltip": "Reconnecting with past website visitors to encourage bookings."
+		},
+		{
+			"id": 15,
+			"list": "New Creative Ad Launches",
+			"tooltip": "Introducing fresh ad ideas to keep attracting customers."
+		},
+		{
+			"id": 16,
+			"list": "Remarketing List",
+			"tooltip": "A group of users who visited your website, ideal for targeted ads."
+		},
+		{
+			"id": 17,
+			"list": "Retargeting Improvements",
+			"tooltip": "Enhancing strategies to bring back potential customers."
+		},
+		{
+			"id": 18,
+			"list": "Ad Quality Score Improvement",
+			"tooltip": "Boosting ad quality for better placement and cost-effectiveness."
+		},
+		{
+			"id": 19,
+			"list": "Keyword Quality Score Improvement",
+			"tooltip": "Improving keyword relevance to boost ad performance."
+		}
+	],
+
+	"list_two": [
+		{
+			"id": 1,
+			"list": "Proper Geo-Targeting",
+			"tooltip": "Targeting ads to specific locations where potential customers are."
+		},
+		{
+			"id": 2,
+			"list": "Device Targeting",
+			"tooltip": "Displaying ads on devices your audience prefers, like smartphones or desktops."
+		},
+		{
+			"id": 3,
+			"list": "Custom Audiences",
+			"tooltip": "Creating specialized groups of potential customers based on their interests."
+		},
+		{
+			"id": 4,
+			"list": "Audience Segmentation",
+			"tooltip": "Dividing your audience into smaller groups for personalized ads."
+		},
+		{
+			"id": 5,
+			"list": "Conversion Intent Ad Grouping",
+			"tooltip": "Grouping keywords and ads based on customer intent for better results."
+		},
+		{
+			"id": 6,
+			"list": "Right Bid Strategy Selection",
+			"tooltip": "Choosing the best bidding strategy to meet your goals."
+		},
+		{
+			"id": 7,
+			"list": "Campaign Budget Management",
+			"tooltip": "Allocating your ad budget effectively among campaigns."
+		},
+		{
+			"id": 8,
+			"list": "Ad Budget Scaling",
+			"tooltip": "Increasing or decreasing ad spending based on performance."
+		},
+		{
+			"id": 9,
+			"list": "Use Ad Extensions",
+			"tooltip": "Adding extra info to your ads, like location or phone number, to make them more informative."
+		},
+		{
+			"id": 10,
+			"list": "Ad Position Monitoring",
+			"tooltip": "Keeping an eye on where your ads appear on search results pages."
+		},
+		{
+			"id": 11,
+			"list": "Ad Rotation",
+			"tooltip": "Testing different ad versions to see which ones perform best."
+		},
+		{
+			"id": 12,
+			"list": "Conversion/Booking Tracking",
+			"tooltip": "Measuring how many people take action after clicking on your ad."
+		},
+		{
+			"id": 13,
+			"list": "Conversion Rate Optimization",
+			"tooltip": "Improving your website to increase the number of bookings."
+		},
+		{
+			"id": 14,
+			"list": "Conversion Rate Monitoring",
+			"tooltip": "Tracking how often website visitors turn into paying customers."
+		},
+		{
+			"id": 15,
+			"list": "Conversion Quality Improving",
+			"tooltip": "Enhancing the overall experience to boost the quality of bookings."
+		},
+		{
+			"id": 16,
+			"list": "Time-Based Split Testing",
+			"tooltip": "Testing ad performance at different times to find the best schedule."
+		},
+		{
+			"id": 17,
+			"list": "Ad Schedule Refinement",
+			"tooltip": "Adjusting when your ads appear to reach your audience at the right times."
+		},
+		{
+			"id": 13,
+			"list": "Geographic Bid Adjustments",
+			"tooltip": "Tweaking bids to perform better in specific locations."
+		},
+		{
+			"id": 13,
+			"list": "Ad Placement Exclusions",
+			"tooltip": "Blocking your ads from showing on certain websites or apps."
+		}
+	]
+}

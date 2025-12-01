@@ -1,0 +1,25 @@
+{
+	"head_message": {
+		"heading1": "SEO: The Secret to Getting Found When",
+		"heading2": "People Search for What You Offer",
+		"text_line": "We use proven SEO strategies to help more people find your website. This means when they search for things like escape room near me, birthday party places, or team-building activities, your site will pop up and catch their interest."
+	},
+
+	"card_content": [
+		{
+			"heading": "Unlock SEO Brilliance",
+			"pera": "Our experts blend SEO mastery with escape room insights for top search engine rankings.",
+			"image": "seoAgency/absolute-seo-experts-escape-room-marketer.svg"
+		},
+		{
+			"heading": "Winning SEO Strategy",
+			"pera": "Step into the spotlight of success with our SEO strategy and feel the excitement of winning online.",
+			"image": "facebookAdsAgency/creative-copywriting-escape-room-marketer.svg"
+		},
+		{
+			"heading": "Comprehensive Service",
+			"pera": "Stay ahead of the competition with our holistic SEO service and grow your business big time.",
+			"image": "seoAgency/multitude-of-seo-services-escape-room-marketer.svg"
+		}
+	]
+}

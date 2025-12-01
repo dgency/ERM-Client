@@ -1,0 +1,63 @@
+{
+    "head_message": {
+		"heading": "Better Content = Better Links, & We’ll Help You With Both",
+		"text_line": "We’ll custom create link-worthy content that you can use for SEO and your other marketing channels too."
+	},
+    "cards":[
+        {
+            "id":1,
+            "title":"Blog Posts",
+            "image":"blog-posts-escape-room-marketer.svg"
+           
+        },
+        {
+            "id":2,
+            "title":"Infographics",
+            "image":"infographics-escape-room-marketer.svg"
+            
+        },
+        {
+            "id":3,
+             "title":"Checklists",
+            "image":"checklists-escape-room-marketer.svg"
+            
+        },
+        {
+            "id":4,
+             "title":"eBooks",
+            "image":"eBooks-escape-room-marketer.svg"
+           
+        },
+        {
+            "id":5,
+             "title":"Whitepapers",
+            "image":"whitepapers-escape-room-marketer.svg"
+        
+        },
+        {
+            "id":6,
+             "title":"Case Studies",
+            "image":"case-studies-escape-room-marketer.svg"
+           
+        },
+        {
+            "id":7,
+             "title":"Reviews",
+            "image":"reviews-escape-room-marketer.svg"
+           
+        },
+        {
+            "id":8,
+             "title":"How-to Guides",
+            "image":"how-to-guides-escape-room-marketer.svg"
+           
+        },
+        {
+            "id":9,
+             "title":"Guest Posts",
+            "image":"guest-posts-escape-room-marketer.svg"
+         
+        }
+    ]
+
+}

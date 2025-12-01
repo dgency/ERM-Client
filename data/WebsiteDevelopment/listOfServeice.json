@@ -1,0 +1,216 @@
+{
+	"head_message": {
+		"heading1": "Does Your Existing Web Development",
+		"heading2": "Agency Do All These Vital Things?",
+		"text_line": "We're not your average web design agency. We infuse vital web elements, crafting a masterpiece that captivates your target market."
+	},
+	"side_img": {
+		"left_img": "landingPageAgency/landing-page-agency-list-left-escape-room-marketer.svg",
+		"right_img": "landingPageAgency/landing-page-agency-list-right-escape-room-marketer.svg"
+	},
+	"list_one": [
+		{
+			"id": 1,
+			"list": "Data-Driven Conversion Research",
+			"tooltip": "Using real-world data to understand what convinces adventure seekers to become escape room customers on your website."
+		},
+		{
+			"id": 2,
+			"list": "Conversion Rate Optimization (CRO)",
+			"tooltip": "Improving your website so that more visitors take the desired action, such as booking an escape room or inquiring about events and parties."
+		},
+		{
+			"id": 3,
+			"list": "In-depth Competitor Analysis",
+			"tooltip": "Studying your competitors' websites to learn from their strengths and weaknesses. Ultimately finding opportunities to rank your site higher than them."
+		},
+		{
+			"id": 4,
+			"list": "Effective Breadcrumb Technique",
+			"tooltip": "Well-planned breadcrumbs are like a map on your site, making it easier for visitors to navigate. It boosts user experience as well as conversion rate."
+		},
+		{
+			"id": 5,
+			"list": "Proper FAQ Hierarchy",
+			"tooltip": "Organizing your Frequently Asked Questions to help visitors quickly find answers."
+		},
+		{
+			"id": 6,
+			"list": "Effective Copywriting",
+			"tooltip": "Writing words that engage and persuade visitors to take action, ultimately booking an escape room."
+		},
+		{
+			"id": 7,
+			"list": "Redesign/Iteration Testing",
+			"tooltip": "Continuously improving your website's design based on real user feedback."
+		},
+		{
+			"id": 8,
+			"list": "Improve Confidence Level",
+			"tooltip": "Building trust with your website visitors so they feel comfortable booking with you."
+		},
+		{
+			"id": 9,
+			"list": "Optimizing With ICE Framework",
+			"tooltip": "A method to prioritize what changes will have the most impact on your website."
+		},
+		{
+			"id": 10,
+			"list": "Mobile First Design",
+			"tooltip": "Designing your website primarily for mobile devices to make sure it looks and works well on smartphones because 90% of escape room traffic are from mobile devices."
+		},
+		{
+			"id": 11,
+			"list": "Device-Specific Optimization",
+			"tooltip": "Tailoring your website's experience for different devices, like mobile, tablets or desktops."
+		},
+		{
+			"id": 12,
+			"list": "Dedicated Device Experiences",
+			"tooltip": "Creating optimized designs for specific devices, enhancing user experience."
+		},
+		{
+			"id": 13,
+			"list": "Geo-Targeting Optimization",
+			"tooltip": "Customizing website content based on a visitor's location for a more personalized experience."
+		},
+		{
+			"id": 14,
+			"list": "Enhanced Game Pages",
+			"tooltip": "Improving the presentation and information about your escape room games, such as storyline, the plot and the mission."
+		},
+		{
+			"id": 15,
+			"list": "Simpler Traffic Routing",
+			"tooltip": "Making it easy for visitors to find what they're looking for on your escape room site."
+		},
+		{
+			"id": 16,
+			"list": "Improved Checkout Experience",
+			"tooltip": "Streamlining the process for booking escape room experiences and party and events inquiries."
+		},
+		{
+			"id": 17,
+			"list": "Attention Ratio Simplification",
+			"tooltip": "Reducing distractions on your site to keep visitors focused on booking."
+		},
+		{
+			"id": 18,
+			"list": "Leverage Social Proof",
+			"tooltip": "Using reviews and testimonials to show that others have enjoyed your escape rooms."
+		},
+		{
+			"id": 19,
+			"list": "Bounce Rate Minimization",
+			"tooltip": "Lowering the number of visitors who leave your site without taking action."
+		},
+		{
+			"id": 20,
+			"list": "Single-Variable Testing",
+			"tooltip": "Experimenting with one change at a time to see its impact on conversions."
+		}
+	],
+
+	"list_two": [
+		{
+			"id": 1,
+			"list": "Multivariate Split Testing",
+			"tooltip": "Testing multiple changes at once to find the best combination for improving conversions."
+		},
+		{
+			"id": 2,
+			"list": "Traffic Intent Considerations",
+			"tooltip": "Designing dedicated web pages to align with what visitors are looking for— for example, birthday parties, corporate events, bachelor parties and more pages."
+		},
+		{
+			"id": 3,
+			"list": "Contextualized Hero Shots",
+			"tooltip": "Using images that relate directly to your escape rooms to capture visitors' attention."
+		},
+		{
+			"id": 4,
+			"list": "User-Friendly Navigation",
+			"tooltip": "Making sure your website is easy to navigate on every device, so visitors can quickly find what they need and book anytime."
+		},
+		{
+			"id": 5,
+			"list": "Compelling Visuals",
+			"tooltip": "Using custom graphics, videos and images to engage visitors to your site."
+		},
+		{
+			"id": 6,
+			"list": "Engaging Storytelling",
+			"tooltip": "Presenting compelling narratives and graphics about your escape rooms to draw visitors in."
+		},
+		{
+			"id": 7,
+			"list": "SEO Keyword Research",
+			"tooltip": "Identifying popular keywords and phrases people use when searching for fun things to do and escape rooms to improve your website's visibility."
+		},
+		{
+			"id": 8,
+			"list": "SEO-Friendly URLs",
+			"tooltip": "Creating website URLs that are easy for search engines to understand."
+		},
+		{
+			"id": 9,
+			"list": "High-Quality Content",
+			"tooltip": "Displaying interesting details and graphics on your escape room website that keeps visitors engaged."
+		},
+		{
+			"id": 10,
+			"list": "Clear Call-to-Actions",
+			"tooltip": "Using persuasive buttons and links to guide visitors toward booking."
+		},
+		{
+			"id": 11,
+			"list": "Booking Integration for Conversion",
+			"tooltip": "Making it super easy for visitors to book escape rooms directly on your site."
+		},
+		{
+			"id": 12,
+			"list": "Analytics and Conversion Tracking",
+			"tooltip": "Setting up Google Analytics 4 and booking engine integration to measure your website performance and how well it converts visitors."
+		},
+		{
+			"id": 13,
+			"list": "Schema Markup",
+			"tooltip": "Adding special code to your website to help search engines display useful information in search results."
+		},
+		{
+			"id": 14,
+			"list": "Email Marketing Integration",
+			"tooltip": "Seamlessly connecting your website to your email marketing software."
+		},
+		{
+			"id": 15,
+			"list": "Thematic Testimonial Showcase",
+			"tooltip": "Displaying customer reviews and stories related to your escape rooms and particular event types, such as birthday parties, corporate events etc."
+		},
+		{
+			"id": 16,
+			"list": "Gamification Elements",
+			"tooltip": "Adding interactive elements and features to your website to engage visitors."
+		},
+		{
+			"id": 17,
+			"list": "Interactive Maps",
+			"tooltip": "Helping visitors easily find the location of your escape rooms and other important information about your escape room center."
+		},
+		{
+			"id": 18,
+			"list": "Local SEO Optimization",
+			"tooltip": "Optimizing your escape room site to appear at the top of local search results."
+		},
+		{
+			"id": 19,
+			"list": "Robust Usability Testing",
+			"tooltip": "Rigorous testing to ensure your escape room website is easy and enjoyable to use."
+		},
+		{
+			"id": 20,
+			"list": "Page Speed Optimization",
+			"tooltip": "Making your escape room site load quickly, which improves user experience and search engine rankings."
+		}
+	]
+}

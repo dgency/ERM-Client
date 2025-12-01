@@ -1,0 +1,40 @@
+{
+	"Ads": [
+		{
+			"id": 1,
+			"ad": "/animation/special-agent/index.html"
+		},
+		{
+			"id": 2,
+			"ad": "/animation/sherlocks-library/index.html"
+		},
+		{
+			"id": 3,
+			"ad": "/animation/black-ops/index.html"
+		},
+		{
+			"id": 4,
+			"ad": "/animation/escape-from-alcatraz/index.html"
+		},
+		{
+			"id": 5,
+			"ad": "/animation/hollywood-premiere/index.html"
+		},
+		{
+			"id": 6,
+			"ad": "/animation/houdini's-magic-cell/index.html"
+		},
+		{
+			"id": 7,
+			"ad": "/animation/locked-in-the-lift/index.html"
+		},
+		{
+			"id": 8,
+			"ad": "/animation/magic-castle/index.html"
+		},
+		{
+			"id": 9,
+			"ad": "/animation/zombie-apocalypse/index.html"
+		}
+	]
+}

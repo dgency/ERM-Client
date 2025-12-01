@@ -1,0 +1,75 @@
+{
+	"head_message": {
+		"heading1": "Frequently Asked Questions",
+		"heading2": "Unlock the Mysteries of Web Design",
+		"text_line": "Master the art of high-converting website design with our FAQs. Get answers to your burning questions and bust common myths, all without the jargon."
+	},
+
+	"question_answer": [
+		{
+			"id": 1,
+			"question": "What is the difference between a landing page and a website?",
+			"answer": "A landing page is a single web page, such as Birthday Party page, with an objective to convert visitors into customers. It typically has a single focus and a clear call to action, such as 'Inquire Now'. A website is a collection of web pages that provide every information about your business. It may have multiple goals, such as providing business information and game details, generating event inquiries, getting online bookings and more."
+		},
+		{
+			"id": 2,
+			"question": "Why should I hire you to build my escape room website?",
+			"answer": "We are a team of experts in the escape room industry with 7 years of industry experience. We have worked with over 20 escape room businesses to create websites that are both visually appealing and effective at generating online bookings and event inquiries. We understand the unique needs of escape room businesses, and we can create a website that will help you to achieve your goals."
+		},
+		{
+			"id": 3,
+			"question": "Are your industry and competitors' research thorough?",
+			"answer": "Yes, we do thorough industry and competitor research before we start working on any website. This helps us to understand the latest trends in escape room web design and to identify what makes your escape room business unique. We use this information to create a website that will stand out from the competition."
+		},
+		{
+			"id": 4,
+			"question": " What is the cost of web design?",
+			"answer": "The cost of web design will vary depending on the size and complexity of your website. However, we are committed to working with you to create a website that fits your budget."
+		},
+		{
+			"id": 5,
+			"question": "How long does it take to create a website?",
+			"answer": "The amount of time it takes to create a website will vary depending on the size and complexity of your website. However, most websites can be created within a few weeks or months."
+		},
+		{
+			"id": 6,
+			"question": "What is a high-converting website?",
+			"answer": "A high-converting website is a website that is designed to convert visitors into customers. It does this by providing visitors with the information they need to make a reservation and making it easy for them to complete the purchase process."
+		},
+		{
+			"id": 7,
+			"question": "I'm not sure what I want my website to look like. What should I do?",
+			"answer": "If you are not sure what you want your website to look like, we can help. We will work with you to understand your needs and goals, and we will create a design that you love."
+		},
+		{
+			"id": 8,
+			"question": "Can you design a website that is mobile-friendly?",
+			"answer": "Yes, every website we design is mobile-friendly. We understand that more and more people are using their smartphones and tablets to browse the web, so we ensure that our websites look good and function well on all devices."
+		},
+		{
+			"id": 9,
+			"question": "Can you design a website that is easy to navigate?",
+			"answer": "Yes, we design websites that are easy to navigate. We want your website visitors to be able to find the information they are looking for easily and quickly."
+		},
+		{
+			"id": 10,
+			"question": "Can you design a website that is visually appealing and engaging?",
+			"answer": "Yes, we design websites that are visually appealing and engaging. We use high-quality images and videos, and we create a design that is both visually appealing and easy to navigate."
+		},
+		{
+			"id": 11,
+			"question": "Can you design a website that is informative about escape rooms?",
+			"answer": "Yes, we can design a website that is informative about escape rooms. We can create content that will help your website visitors learn more about escape rooms and why they should book an escape room at your business."
+		},
+		{
+			"id": 12,
+			"question": "Can you design a website that includes booking functionality?",
+			"answer": "Yes, we design websites that include booking functionality. We can integrate a booking system into your website so that your website visitors can easily book an escape room at your business."
+		},
+		{
+			"id": 13,
+			"question": "Can you provide references from past clients?",
+			"answer": "Yes, we can provide references from past clients. We have worked with over 20 escape room businesses to create websites, and we would happily provide you with references from our existing clients."
+		}
+	]
+}
