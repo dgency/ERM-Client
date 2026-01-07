@@ -116,7 +116,7 @@ function SeoAgency({ heroData, companiesData, ourWork, seoData, fineWebsiteData,
 	}, []);
 
 	if (error) {
-		return <Error statusCode={props.error.statusCode} title={props.error.message} />;
+		return <Error statusCode={error.statusCode} title={error.message} />;
 	}
 
 	try {
