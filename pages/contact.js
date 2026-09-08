@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import styles from "../styles/contactus.module.css";
 import FooterTopCta from "@/components/FooterTopCta";
 import Image from "next/image";
@@ -21,6 +21,8 @@ function Contact({ contactData, seoData }) {
 	const [isPhoneValid, setIsphoneValid] = useState("");
 
 	const [phoneCountryCode, setPhoneCountryCode] = useState("+1");
+	const formStartedAt = useRef(Date.now());
+	const [isSubmitting, setIsSubmitting] = useState(false);
 
 	let contactObj = {};
 
@@ -45,8 +47,10 @@ function Contact({ contactData, seoData }) {
 	};
 
 	const handleSubmit = async (e) => {
+		e.preventDefault();
+		if (isSubmitting) return;
+
 		if (name !== "" && phone === "" && email.includes("@")) {
-			e.preventDefault();
 			setPhone(null);
 			setTimeout(() => {
 				setPhone("");
@@ -55,14 +59,18 @@ function Contact({ contactData, seoData }) {
 
 		// let phone = (await "+") + phone;
 		if (phone !== "") {
-			e.preventDefault();
 			try {
 				await phoneSchema.validate({ phone });
 				console.log("Phone number is valid");
 
 				if (name !== "" && email.includes("@") && websiteAddress !== "" && message !== "") {
 					e.preventDefault();
-					contactObj = { data: { name, email, phone, country, websiteAddress, message }, subject: "Contact - Escape Room Marketer", form: "contact" };
+					contactObj = {
+						data: { name, email, phone, country, websiteAddress, message, websiteUrl: e.currentTarget.elements.websiteUrl.value },
+						subject: "Contact - Escape Room Marketer",
+						form: "contact",
+						formStartedAt: formStartedAt.current,
+					};
 
 					const thankYouParam = name.split(" ")[0];
 					let hexValue = [];
@@ -75,14 +83,12 @@ function Contact({ contactData, seoData }) {
 					let urlEncodedString = encodeURIComponent(hexString);
 					
 
-					setTimeout(() => {
-						location.replace(`https://escaperoommarketer.com/thank-you?%256e=${urlEncodedString}`);
-						// setLoad(false);
-					}, 500);
-
 					try {
+						setIsSubmitting(true);
 						await sendPricingForm(contactObj);
+						location.replace(`https://escaperoommarketer.com/thank-you?%256e=${urlEncodedString}`);
 					} catch (error) {
+						setIsSubmitting(false);
 						console.log(error);
 					}
 				} else {
@@ -208,7 +214,8 @@ function Contact({ contactData, seoData }) {
 								{contactData && contactData.data.attributes.contact_card_title}
 							</h2>
 							<div className="pt-[40px] md:pt-[50px] ">
-								<form action="">
+								<form onSubmit={handleSubmit}>
+									<input type="text" name="websiteUrl" tabIndex="-1" autoComplete="off" aria-hidden="true" className="hidden" />
 									<div className=" flex flex-col md:flex-row gap-[20px] md:gap-[50px] w-full">
 										<div className="sm:w-full relative">
 											<label htmlFor="" className="font-[400] text-[18px] text-[#222]">
@@ -323,8 +330,8 @@ function Contact({ contactData, seoData }) {
 									</div>
 									<div className="mt-[20px] ">
 										<input
-											onClick={handleSubmit}
 											type="submit"
+											disabled={isSubmitting}
 											value={contactData && contactData.data.attributes.contact_cta}
 											className="w-full shadow py-2 px-2 cursor-pointer rounded-md bg-[#FF492C] hover:bg-[#E74329] text-white text-[18px] font-[500] "
 										/>

@@ -7,15 +7,8 @@ import FreeMarketingBanner from "@/components/others/FreeMarketingBanner";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 
-import { Open_Sans } from "next/font/google";
 import TopArrowBtn from "@/components/TopArrowBtn";
 import RedirectFile from "@/components/RedirectFile";
-
-const open_sans = Open_Sans({
-	subsets: ["latin"],
-	variable: "--font-sans",
-	// display: "swap",
-});
 
 export default function App({ Component, pageProps }) {
 	//functionality of freemarketing page top banner
@@ -60,7 +53,7 @@ export default function App({ Component, pageProps }) {
 	return (
 		<>
 			{router.asPath.split("/")[1] !== "templet" ? (
-				<main className={`${open_sans.variable} relative`}>
+				<main className="relative">
 					{Component === Freemarketing ? <FreeMarketingBanner handleCloseBanner={handleCloseBanner} /> : ""}
 					<Navbar marketingBanner={Component === Freemarketing ? closeBanner : false} />
 					<div className="">

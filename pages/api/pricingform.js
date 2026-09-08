@@ -1,6 +1,55 @@
 // import { mailOptions, transporter } from "@/config/nodemailer";
 import nodemailer from "nodemailer";
 
+const requestLog = new Map();
+const PROTECTED_FORMS = new Set(["contact", "partner-program"]);
+const MAX_REQUESTS_PER_HOUR = 3;
+const MINIMUM_FORM_TIME = 2500;
+
+const getClientIp = (req) => {
+	const forwardedFor = req.headers["x-forwarded-for"];
+	return (forwardedFor ? forwardedFor.split(",")[0] : req.socket.remoteAddress || "unknown").trim();
+};
+
+const isRateLimited = (form, ip) => {
+	const now = Date.now();
+	const requestKey = `${form}:${ip}`;
+	const recentRequests = (requestLog.get(requestKey) || []).filter((time) => now - time < 60 * 60 * 1000);
+
+	if (recentRequests.length >= MAX_REQUESTS_PER_HOUR) {
+		requestLog.set(requestKey, recentRequests);
+		return true;
+	}
+
+	recentRequests.push(now);
+	requestLog.set(requestKey, recentRequests);
+	return false;
+};
+
+const isSpam = (req, body) => {
+	if (!PROTECTED_FORMS.has(body.form)) return false;
+
+	const data = body.data || {};
+	const formStartedAt = Number(body.formStartedAt);
+	return Boolean(data.websiteUrl) || !Number.isFinite(formStartedAt) || Date.now() - formStartedAt < MINIMUM_FORM_TIME;
+};
+
+const isValidSubmission = (body) => {
+	if (!PROTECTED_FORMS.has(body.form)) return true;
+
+	const data = body.data || {};
+	return (
+		typeof body.subject === "string" &&
+		typeof data.name === "string" &&
+		data.name.trim().length >= 2 &&
+		typeof data.email === "string" &&
+		/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email) &&
+		typeof data.phone === "string" &&
+		data.phone.trim().length >= 7 &&
+		(body.form !== "contact" || (typeof data.websiteAddress === "string" && typeof data.message === "string"))
+	);
+};
+
 const generateEmail = (data) => {
 	const stringData = Object.entries(data).reduce((str, [key, val]) => (str += `${key} : \n${val} \n \n`), "");
 
@@ -17,10 +66,26 @@ const generateEmail = (data) => {
 };
 
 const handler = async (req, res) => {
-	if (req.method === "POST") {
-		const data = req.body.data;
-		const subject = req.body.subject;
-		const isForm = req.body.form;
+	if (req.method !== "POST") {
+		return res.status(405).json({ message: "Method not allowed" });
+	}
+
+	const body = req.body || {};
+	const ip = getClientIp(req);
+
+	if (isSpam(req, body)) {
+		return res.status(200).json({ message: "Submission received" });
+	}
+
+	if (!isValidSubmission(body) || (PROTECTED_FORMS.has(body.form) && isRateLimited(body.form, ip))) {
+		return res.status(400).json({ message: "Unable to submit this form" });
+	}
+
+	const data = { ...body.data };
+	const subject = body.subject;
+	const isForm = body.form;
+
+	try {
 
 		let transporter = nodemailer.createTransport({
 			service: "gmail",
@@ -39,30 +104,13 @@ const handler = async (req, res) => {
 			bcc: ["hamid@dgency.com", "dgency.com@gmail.com", "support@escaperoommarketer.com", "rony@escaperoommarketer.com"],
 		};
 
-		transporter.sendMail(mailOptions, function (err, info) {
-			if (err) {
-				console.log(err);
-			} else {
-				console.log(info);
-			}
-		});
+		await transporter.sendMail(mailOptions);
 
 		await sendAutoReply(data.email, isForm, data.name);
-
-		// try {
-		// 	await transporter.sendMail({
-		// 		...mailOptions,
-		// 		// // to:process.env.
-		// 		// // from: data.email,
-		// 		...generateEmail(data),
-		// 		subject: subject,
-		// 	});
-		// } catch (error) {
-		// 	console.log(error);
-		// 	return res.status(400).json({ message: "Bad Request!" });
-		// }
-	} else {
-		return res.status(400).json({ message: "Bad Request!" });
+		return res.status(200).json({ message: "Message sent" });
+	} catch (error) {
+		console.error(error);
+		return res.status(500).json({ message: "Unable to send message" });
 	}
 };
 

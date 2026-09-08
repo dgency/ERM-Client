@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import Image from "next/image";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
@@ -18,6 +18,8 @@ function PartnerContact({ toggle, setToggle }) {
 		isNameValid: "",
 		isEmailValid: "",
 	});
+	const formStartedAt = useRef(Date.now());
+	const [isSubmitting, setIsSubmitting] = useState(false);
 
 	const handleClose = () => {
 		document.body.classList.remove("overflow-hidden");
@@ -30,6 +32,7 @@ function PartnerContact({ toggle, setToggle }) {
 			email: "",
 			phone: "+1",
 		}));
+		formStartedAt.current = Date.now();
 	};
 
 	const handleKeyDown = (e) => {
@@ -53,69 +56,34 @@ function PartnerContact({ toggle, setToggle }) {
 		}));
 	};
 
-	console.log(state.phone);
-
 	const handleSubmit = async (e) => {
-		if (state.name !== "" && state.phone === "" && state.email !== "" && state.email.includes("@")) {
-			e.preventDefault();
-			setValidation((prev) => ({ ...prev, isPhoneValid: "Please enter a valid number" }));
-
-			setTimeout(() => {
-				setValidation((prev) => ({ ...prev, isPhoneValid: "" }));
-			}, 800);
+		e.preventDefault();
+		if (isSubmitting) return;
+		if (state.name.trim() === "" || state.email.trim() === "" || !state.email.includes("@") || state.phone === "") {
+			setValidation((prev) => ({
+				...prev,
+				isNameValid: state.name.trim() === "" ? "Please enter your name" : "",
+				isEmailValid: state.email.trim() === "" || !state.email.includes("@") ? "Please enter a valid email" : "",
+				isPhoneValid: state.phone === "" ? "Please enter a valid number" : "",
+			}));
+			return;
 		}
 
-		// let phone = (await "+") + phone;
-
-		if (state.phone !== "") {
-			e.preventDefault();
-			const phone = state.phone;
-			try {
-				await phoneSchema.validate({ phone });
-				console.log("Phone number is valid");
-
-				if (state.name !== "" && state.email !== "" && state.email.includes("@")) {
-					e.preventDefault();
-					let finalObj = { data: state, subject: "Partner Program - Escape Room Marketer", form: "partner-program" };
-
-					setTimeout(() => {
-						location.replace(`https://escaperoommarketer.com/thank-you?name=${state.name.split(" ")[0]}`);
-						// setLoad(false);
-					}, 500);
-
-					try {
-						await sendPricingForm(finalObj);
-					} catch (error) {
-						console.log(error);
-					}
-				} else {
-					e.preventDefault();
-					if (state.email === "" || state.email.indexOf("@") === -1) {
-						setValidation((prev) => ({ ...prev, isEmailValid: "Please enter a valid email" }));
-
-						setTimeout(() => {
-							setValidation((prev) => ({ ...prev, isEmailValid: "" }));
-						}, 800);
-					} else if (state.name === "") {
-						setValidation((prev) => ({ ...prev, isNameValid: "Please enter your name" }));
-
-						setTimeout(() => {
-							setValidation((prev) => ({ ...prev, isNameValid: "" }));
-						}, 800);
-					}
-				}
-			} catch (error) {
-				console.error(error);
-				setValidation((prev) => ({ ...prev, isPhoneValid: "Please enter a valid number" }));
-
-				setTimeout(() => {
-					setValidation((prev) => ({ ...prev, isPhoneValid: "" }));
-				}, 800);
-			}
+		try {
+			await phoneSchema.validate({ phone: state.phone });
+			setIsSubmitting(true);
+			await sendPricingForm({
+				data: { ...state, websiteUrl: e.currentTarget.elements.websiteUrl.value },
+				subject: "Partner Program - Escape Room Marketer",
+				form: "partner-program",
+				formStartedAt: formStartedAt.current,
+			});
+			location.replace(`https://escaperoommarketer.com/thank-you?name=${state.name.split(" ")[0]}`);
+		} catch (error) {
+			setIsSubmitting(false);
+			setValidation((prev) => ({ ...prev, isPhoneValid: "Please enter a valid number" }));
 		}
 	};
-
-	console.log(state);
 
 	return (
 		<div className="">
@@ -134,7 +102,8 @@ function PartnerContact({ toggle, setToggle }) {
 					<div className="px-2.5 max-w-[400px] mx-auto relative z-20 bg-white">
 						<h2 className="text-[28px] md:text-[39px] text-center font-[800] leading-tight -mt-5">Who Can We Send Program Info To?</h2>
 
-						<form action="" className=" pt-3 md:pt-8 pb-10">
+						<form onSubmit={handleSubmit} className=" pt-3 md:pt-8 pb-10">
+							<input type="text" name="websiteUrl" tabIndex="-1" autoComplete="off" aria-hidden="true" className="hidden" />
 							<div className="relative">
 								<label htmlFor="" className="font-[400] text-[18px] text-[#222]">
 									Your name<span className="text-[#FF492C] text-lg">*</span>
@@ -209,8 +178,8 @@ function PartnerContact({ toggle, setToggle }) {
 								className="border border-[#C9CBCD] bg-[#FBFBFB] w-full h-[50px]  text-base px-2 py-1 mb-7 mt-2 rounded-md outline-[#FF492C]"
 							/> */}
 							<input
-								onClick={handleSubmit}
 								type="submit"
+								disabled={isSubmitting}
 								value={"SEND ME INFO"}
 								className="w-full shadow py-2 px-2 cursor-pointer rounded-md bg-[#FF492C] hover:bg-[#E74329] text-white text-[18px] font-[500] "
 							/>

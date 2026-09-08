@@ -4,9 +4,12 @@ const nextConfig = {
 };
 
 module.exports = {
-	nextConfig,
+	...nextConfig,
 	images: {
-		domains: ["escaperoommarketer.com","res.cloudinary.com"],
+		remotePatterns: [
+			{ protocol: "https", hostname: "escaperoommarketer.com" },
+			{ protocol: "https", hostname: "res.cloudinary.com" },
+		],
 	},
 	
 
