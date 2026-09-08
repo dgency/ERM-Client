@@ -2,6 +2,9 @@
   "name": "escaperoom_marketers",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "20.19.0"
+  },
   "scripts": {
     "dev": "next dev -p 4000",
     "build": "next build",
