@@ -71,7 +71,13 @@ function PartnerContact({ toggle, setToggle }) {
 
 		try {
 			await phoneSchema.validate({ phone: state.phone });
-			setIsSubmitting(true);
+		} catch (error) {
+			setValidation((prev) => ({ ...prev, isPhoneValid: "Please enter a valid number" }));
+			return;
+		}
+
+		setIsSubmitting(true);
+		try {
 			await sendPricingForm({
 				data: { ...state, websiteUrl: e.currentTarget.elements.websiteUrl.value },
 				subject: "Partner Program - Escape Room Marketer",
@@ -81,7 +87,7 @@ function PartnerContact({ toggle, setToggle }) {
 			location.replace(`https://escaperoommarketer.com/thank-you?name=${state.name.split(" ")[0]}`);
 		} catch (error) {
 			setIsSubmitting(false);
-			setValidation((prev) => ({ ...prev, isPhoneValid: "Please enter a valid number" }));
+			console.error("Partner form submission failed", error);
 		}
 	};
 

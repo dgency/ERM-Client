@@ -213,7 +213,7 @@ function Contact({ contactData, seoData }) {
 							<h2 className="text-center text-[24px] md:text-3xl font-[800] md:font-bold">
 								{contactData && contactData.data.attributes.contact_card_title}
 							</h2>
-							<div className="pt-[40px] md:pt-[50px] ">
+							<div className="pt-[40px] md:pt-[50px] upadated-form hny-pt rt-lmt">
 								<form onSubmit={handleSubmit}>
 									<input type="text" name="websiteUrl" tabIndex="-1" autoComplete="off" aria-hidden="true" className="hidden" />
 									<div className=" flex flex-col md:flex-row gap-[20px] md:gap-[50px] w-full">
