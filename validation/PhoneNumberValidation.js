@@ -11,8 +11,15 @@ export const phoneSchema = Yup.object().shape({
 
 		try {
 			const normalizedValue = String(value).replace(/[\s()-]/g, "");
-			const phoneValue = normalizedValue.startsWith("+") ? normalizedValue : `+${normalizedValue}`;
-			const phone = parsePhoneNumberFromString(phoneValue);
+			let phone;
+
+			if (normalizedValue.startsWith("+")) {
+				phone = parsePhoneNumberFromString(normalizedValue);
+			} else if (normalizedValue.length === 10) {
+				phone = parsePhoneNumberFromString(normalizedValue, "US");
+			} else {
+				phone = parsePhoneNumberFromString(`+${normalizedValue}`);
+			}
 
 			// Check if the phone number is valid
 			return phone && phone.isValid();

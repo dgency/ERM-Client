@@ -86,7 +86,7 @@ function PartnerContact({ toggle, setToggle }) {
 	};
 
 	return (
-		<div className="">
+		<div className="updated-form hny-pt rt-lmt">
 			<div className={`${toggle ? "activee" : "popup"}  w-[350px] sm:w-[420px] md:w-[620px]  fixed   z-[999]`}>
 				<div className="rounded-lg bg-white ">
 					<Image src="/others/partner-contact.svg" height={100} width={400} alt="" className="w-full" />
