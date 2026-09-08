@@ -59,6 +59,7 @@ function PartnerContact({ toggle, setToggle }) {
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		if (isSubmitting) return;
+		const websiteUrl = e.currentTarget.elements.websiteUrl?.value || "";
 		if (state.name.trim() === "" || state.email.trim() === "" || !state.email.includes("@") || state.phone === "") {
 			setValidation((prev) => ({
 				...prev,
@@ -79,7 +80,7 @@ function PartnerContact({ toggle, setToggle }) {
 		setIsSubmitting(true);
 		try {
 			await sendPricingForm({
-				data: { ...state, websiteUrl: e.currentTarget.elements.websiteUrl.value },
+				data: { ...state, websiteUrl },
 				subject: "Partner Program - Escape Room Marketer",
 				form: "partner-program",
 				formStartedAt: formStartedAt.current,

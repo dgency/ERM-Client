@@ -254,8 +254,9 @@ function PricingCalculator({ pricingPageData, cardNote }) {
 					}
 				}
 			} catch (error) {
-				console.error(error.errors[0]);
-				setIsphoneValid(error.errors[0]);
+				const validationMessage = error?.message || "Invalid phone number";
+				console.error(validationMessage);
+				setIsphoneValid(validationMessage);
 				setTimeout(() => {
 					setIsphoneValid("");
 				}, 800);

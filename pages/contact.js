@@ -49,6 +49,7 @@ function Contact({ contactData, seoData }) {
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		if (isSubmitting) return;
+		const websiteUrl = e.currentTarget.elements.websiteUrl?.value || "";
 
 		if (name !== "" && phone === "" && email.includes("@")) {
 			setPhone(null);
@@ -64,9 +65,8 @@ function Contact({ contactData, seoData }) {
 				console.log("Phone number is valid");
 
 				if (name !== "" && email.includes("@") && websiteAddress !== "" && message !== "") {
-					e.preventDefault();
 					contactObj = {
-						data: { name, email, phone, country, websiteAddress, message, websiteUrl: e.currentTarget.elements.websiteUrl.value },
+						data: { name, email, phone, country, websiteAddress, message, websiteUrl },
 						subject: "Contact - Escape Room Marketer",
 						form: "contact",
 						formStartedAt: formStartedAt.current,
@@ -116,8 +116,9 @@ function Contact({ contactData, seoData }) {
 					}
 				}
 			} catch (error) {
-				console.error(error.errors[0]);
-				setIsphoneValid(error.errors[0]);
+				const validationMessage = error?.message || "Invalid phone number";
+				console.error(validationMessage);
+				setIsphoneValid(validationMessage);
 				setTimeout(() => {
 					setIsphoneValid("");
 				}, 800);
@@ -131,7 +132,7 @@ function Contact({ contactData, seoData }) {
 
 	try {
 		return (
-			<div className="">
+			<div className="contact-page-v15">
 				<Head>
 					<title>{seoData && seoData.data.attributes.seo?.metaTitle}</title>
 					<meta name="description" content={`${seoData && seoData.data.attributes.seo?.metaDescription}`} />
