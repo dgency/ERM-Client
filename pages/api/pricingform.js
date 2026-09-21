@@ -90,7 +90,7 @@ const handler = async (req, res) => {
 		let transporter = nodemailer.createTransport({
 			service: "gmail",
 			auth: {
-				user: "shihab.dgency@gmail.com",
+				user: "shihab.dgency@gmail.com",//"shihab.dgency@gmail.com",
 				pass: "ywhffpccssqxklhi",
 			},
 		});
@@ -101,7 +101,7 @@ const handler = async (req, res) => {
 			replyTo: data.email,
 			subject: subject, // Subject line
 			...generateEmail(data),
-			bcc: ["hamid@dgency.com", "dgency.com@gmail.com", "support@escaperoommarketer.com", "shihab.dgency@gmail.com"],
+			
 		};
 
 		await transporter.sendMail(mailOptions);

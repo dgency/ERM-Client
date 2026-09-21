@@ -49,7 +49,7 @@ function Pricing({ pricingPageData, allPriceData, seoData, error }) {
 				imgThird="/pricing/Pricing-Page-Right-Side-01-01.svg"
 				pricing={true}
 			/>
-			<div className="break_line image bg-[url('/paper-cropped2.svg')]  h-[50px] w-full bg-repeat bg-[length:1800px_100px] bg-center rotate-180 "></div>
+			<div className="break_line vb2 image bg-[url('/paper-cropped2.svg')]  h-[50px] w-full bg-repeat bg-[length:1800px_100px] bg-center rotate-180 "></div>
 
 			<div className="px-[10px] md:px-8 bg-[var(--section-bg-lightblue)]">
 				<div className=" flex justify-center ">
