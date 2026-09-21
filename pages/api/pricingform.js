@@ -96,7 +96,7 @@ const handler = async (req, res) => {
 		});
 
 		let mailOptions = {
-			from:`"Hamid Shawon" <${data.email}>`, // sender address
+			from:`"Erm Test Spam" <${data.email}>`, // sender address
 			to: process.env.EMAIL, // list of receivers
 			replyTo: data.email,
 			subject: subject, // Subject line
