@@ -173,7 +173,7 @@ export default function Home({
 				</Head>
 				<main className="section_body">
 					{/* <div className="break_line image bg-[url('/page_broke.png')] h-[75px] bg-[length:1600px_90px] bg-center -mt-4 bg-[]"></div> */}
-					<div className="hero_cove w-full bg-[var(--section-bg-lightred)] relative overflow-hidden ">
+					<div className="hero_cove shb-v2 w-full bg-[var(--section-bg-lightred)] relative overflow-hidden ">
 						<div className="text-container  m-auto pt-16 md:pt-24 relative z-10">
 							<h1 className="hero_heading tracking-tighter text-center font-extrabold">
 								{heroData && heroData.data.attributes.hero.title_first_line} <br className="hidden lg:block" />
