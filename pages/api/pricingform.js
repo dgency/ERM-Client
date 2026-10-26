@@ -136,10 +136,10 @@ const sendAutoReply = async (recipientEmail, isForm, name) => {
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-      user: "shihab.dgency@gmail.com", //"shihab.dgency@gmail.com",
-      pass: "ywhffpccssqxklhi",
-      //user: process.env.EMAIL,
-      //pass: process.env.EMAIL_PASS,
+     // user: "shihab.dgency@gmail.com", //"shihab.dgency@gmail.com",
+      //pass: "ywhffpccssqxklhi",
+      user: process.env.EMAIL,
+      pass: process.env.EMAIL_PASS,
     },
   });
 

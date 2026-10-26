@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 import styles from "../styles/contactus.module.css";
 import FooterTopCta from "@/components/FooterTopCta";
 import Image from "next/image";
-import { sendPricingForm } from "@/lib/pricingapi";
+import { sendPricingForm,sendPricingFormOff } from "@/lib/pricingapi";
 import { phoneSchema } from "../validation/PhoneNumberValidation";
 
 import PhoneInput from "react-phone-input-2";
@@ -85,7 +85,7 @@ function Contact({ contactData, seoData }) {
 
 					try {
 						setIsSubmitting(true);
-						await sendPricingForm(contactObj);
+						await sendPricingFormOff(contactObj);
 						location.replace(`https://escaperoommarketer.com/thank-you?%256e=${urlEncodedString}`);
 					} catch (error) {
 						setIsSubmitting(false);
