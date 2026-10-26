@@ -107,14 +107,17 @@ const handler = async (req, res) => {
     let transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
-        user: "shihab.dgency@gmail.com", //"shihab.dgency@gmail.com",
-        pass: "ywhffpccssqxklhi",
+        //user: "shihab.dgency@gmail.com", //"shihab.dgency@gmail.com",
+        // pass: "ywhffpccssqxklhi",
+        user: process.env.EMAIL,
+        pass: process.env.EMAIL_PASS,
       },
     });
 
     let mailOptions = {
-      from: `"Erm Test Spam" <${data.email}>`, // sender address
-      to: "shihab.dgency@gmail.com", // list of receivers
+      from: `"Escape Room Marketer" <${data.email}>`, // sender address
+      // to: "shihab.dgency@gmail.com", // list of receivers
+      to: process.env.EMAIL,
       replyTo: data.email,
       subject: subject, // Subject line
       ...generateEmail(data),
@@ -136,7 +139,7 @@ const sendAutoReply = async (recipientEmail, isForm, name) => {
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-     // user: "shihab.dgency@gmail.com", //"shihab.dgency@gmail.com",
+      // user: "shihab.dgency@gmail.com", //"shihab.dgency@gmail.com",
       //pass: "ywhffpccssqxklhi",
       user: process.env.EMAIL,
       pass: process.env.EMAIL_PASS,
@@ -172,7 +175,7 @@ const sendAutoReply = async (recipientEmail, isForm, name) => {
 
   // Define the email options
   const mailOptions = {
-    from: `"Erm test" <shihab.dgency@gmail.com>`,
+    from: `"Escape Room Marketer" <hamid@escaperoommarketer.com>`,
     to: recipientEmail,
     subject: `
 		${
