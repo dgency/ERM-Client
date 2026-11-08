@@ -3,7 +3,7 @@ import nodemailer from "nodemailer";
 
 const requestLog = new Map();
 const PROTECTED_FORMS = new Set(["contact", "partner-program"]);
-const MAX_REQUESTS_PER_HOUR = 3;
+const MAX_REQUESTS_PER_HOUR = 5;
 const MINIMUM_FORM_TIME = 2500;
 
 const getClientIp = (req) => {
