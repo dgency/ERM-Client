@@ -16,7 +16,6 @@ import DedicatedTeam from "@/components/DedicatedTeam";
 import FooterTopCta from "@/components/FooterTopCta";
 import TestimonialCarousel from "@/components/TestimonialCarousel";
 import ConversionMarketing from "@/components/service/ConversionMarketing";
-import { useEffect, useState } from "react";
 // import Payperclick from "@/components/service/Payperclick";
 
 import Lottie from "lottie-react";
@@ -36,6 +35,32 @@ import ButtonMagnito from "@/components/animation/ButtonMagnito";
 
 const Payperclick = dynamic(() => import("../components/service/Payperclick"));
 
+async function fetchHomePageSection(apiUrl, query, section) {
+	let response;
+	try {
+		response = await fetch(`${apiUrl}/api/home-page?${query}`);
+	} catch (error) {
+		throw new Error(`CMS request for homepage "${section}" section failed`, { cause: error });
+	}
+
+	if (!response.ok) {
+		throw new Error(`CMS request for homepage "${section}" section failed with status ${response.status}`);
+	}
+
+	let data;
+	try {
+		data = await response.json();
+	} catch (error) {
+		throw new Error(`CMS returned invalid JSON for homepage "${section}" section`, { cause: error });
+	}
+
+	if (!data?.data?.attributes?.[section]) {
+		throw new Error(`CMS response is missing homepage "${section}" section`);
+	}
+
+	return data;
+}
+
 export default function Home({
 	heroData,
 	worldMapData,
@@ -45,113 +70,24 @@ export default function Home({
 	ourClients,
 	onlyErmAgency,
 	keyServeice,
-	customMarketing,
-	dedicatedTeamData,
 	teamResponse,
 	winingStrategy,
 	testimonialCarousel,
 	footerTopCta,
 	seoData,
-	error,
+	caseStudySectionData,
+	caseStudyCard,
 }) {
-	// console.log(heroData);
-	// const [otherServicesData, setOtherServicesData] = useState();
-	// const [ourClients, setOurClients] = useState();
-	// const [onlyErmAgency, setOnlyErmAgency] = useState();
-	// const [keyServeice, setKeyServeice] = useState();
-	// const [customMarketing, setCustomMarketing] = useState();
-	// const [dedicatedTeamData, setDedicatedTeamData] = useState();
-	// const [teamResponse, setTeamResponse] = useState();
-	// const [winingStrategy, setWiningStrategy] = useState();
-	// const [testimonialCarousel, setTestimonialCarousel] = useState();
-	// const [footerTopCta, setFooterTopCta] = useState();
-
-	const [caseStudySectionData, setCaseStudySectionData] = useState();
-	const [caseStudyCard, setCaseStudyCard] = useState();
-
-	useEffect(() => {
-		const APIurl = `${process.env.NEXT_PUBLIC_API_URL}/api/home-page`;
-
-		fetch(`${APIurl}?populate[0]=casestudy_section.case_studies`)
-			.then((res) => res.json())
-			.then((data) => setCaseStudySectionData(data));
-
-		fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/case-studies?fields=id`)
-			.then((res) => res.json())
-			.then((data) => setCaseStudyCard(data));
-
-		//fetch data for OtherServices section
-		// fetch(
-		// 	`${APIurl}?populate[0]=other_services&populate[1]=other_services.other_services_card&populate[2]=other_services.other_services_card.card_image`
-		// )
-		// 	.then((res) => res.json())
-		// 	.then((data) => setOtherServicesData(data));
-
-		//fetch data for ourClients section
-		// fetch(`${APIurl}?populate[our_clients][populate]=*`)
-		// 	.then((res) => res.json())
-		// 	.then((data) => setOurClients(data));
-
-		//fetch data for onlyErmAgency section
-		// fetch(
-		// 	`${APIurl}?populate[0]=only_erm_agency&populate[1]=only_erm_agency.only_erm_agency_card&populate[2]=only_erm_agency.only_erm_agency_card.image`
-		// )
-		// 	.then((res) => res.json())
-		// 	.then((data) => setOnlyErmAgency(data));
-
-		//fetch data for keyService section
-		// fetch(
-		// 	`${APIurl}?populate[0]=choose_how_you_work&populate[1]=choose_how_you_work.others_card&populate[2]=choose_how_you_work.long_first_card&populate[3]=choose_how_you_work.long_first_card.image&populate[4]=choose_how_you_work.others_card.image`
-		// )
-		// 	.then((res) => res.json())
-		// 	.then((data) => setKeyServeice(data));
-
-		//fetch data for ourClients section
-		// fetch(`${APIurl}?populate[custom_marketing_plan][populate]=*`)
-		// 	.then((res) => res.json())
-		// 	.then((data) => setCustomMarketing(data));
-
-		//fetch data for dedicatedTeam section
-		// fetch(`${APIurl}?populate[dedicated_team][populate]=*`)
-		// 	.then((res) => res.json())
-		// 	.then((data) => setDedicatedTeamData(data));
-
-		//fetch data for keyService section
-		// fetch(
-		// 	`${APIurl}?populate[0]=your_team_response&populate[1]=your_team_response.long_first_card&populate[2]=your_team_response.others_card&populate[3]=your_team_response.long_first_card.image&populate[4]=your_team_response.others_card.image`
-		// )
-		// 	.then((res) => res.json())
-		// 	.then((data) => setTeamResponse(data));
-
-		//fetch data for dedicatedTeam section
-		// fetch(`${APIurl}?populate[wining_strategy][populate]=*`)
-		// 	.then((res) => res.json())
-		// 	.then((data) => setWiningStrategy(data));
-
-		//fetch data for testimonial section
-		// fetch(
-		// 	`${APIurl}?populate[0]=testimonial_carousel&populate[1]=testimonial_carousel.testimonial_data&populate[2]=testimonial_carousel.testimonial_data.persons_image&populate[3]=testimonial_carousel.testimonial_data.company_logo`
-		// )
-		// 	.then((res) => res.json())
-		// 	.then((data) => setTestimonialCarousel(data));
-
-		//fetch data for footerTopCta section
-		// fetch(`${APIurl}?populate[footer_top_cta][populate]=*`)
-		// 	.then((res) => res.json())
-		// 	.then((data) => setFooterTopCta(data));
-	}, []);
-
-	try {
-		return (
+	return (
 			<>
 				<Head>
 					<title>{seoData && seoData.data.attributes.seo?.metaTitle}</title>
 					<meta name="description" content={`${seoData && seoData.data.attributes.seo?.metaDescription}`} />
 					<meta name="keywords" content={`${seoData && seoData.data.attributes.seo?.keywords}`} />
 					<meta name="robots" content={`${seoData && seoData.data.attributes.seo?.metaRobots}`} />
-					<meta property="og:image" content={`${seoData && seoData.data.attributes.seo?.metaImage.data?.attributes.url}`} />
+					<meta property="og:image" content={`${seoData?.data?.attributes?.seo?.metaImage?.data?.attributes?.url || ""}`} />
 					<meta name="twitter:card" content="summary_large_image" />
-					<meta name="twitter:image" content={`${seoData && seoData.data.attributes.seo?.metaImage.data?.attributes.url}`} />
+					<meta name="twitter:image" content={`${seoData?.data?.attributes?.seo?.metaImage?.data?.attributes?.url || ""}`} />
 					<meta name="viewport" content="width=device-width, initial-scale=1" />
 					<link rel="canonical" href={`${seoData && seoData.data.attributes.seo?.canonicalURL}`} />
 					<link rel="preload" href="/home/home_mobile.png" as="image" />
@@ -371,82 +307,58 @@ export default function Home({
 				</main>
 			</>
 		);
-	} catch (error) {
-		return (
-			<>
-				<div className="h-[800px] w-full bg-[#fff7f5] ">
-					<div className="flex justify-center pt-20">
-						<Image src="/under_maintanence.svg" height={400} width={700} alt="this page is under maintanence" />
-					</div>
-					<h1 className="text-center text-[38px] pt-5 font-bold ">This Page Is Under Maintenance 🛠️</h1>
-				</div>
-				<div className="break_line image bg-[url('/footer_top_cta_bottom.svg')] h-[90px] w-full bg-[length:2500px_90px] absolute z-10 mt-[-80px]  bg-center"></div>
-			</>
-		);
-	}
 }
 
 export async function getStaticProps() {
-	// Call an external API endpoint to get posts
-	let newUrl = `${process.env.NEXT_PUBLIC_API_URL}`;
+	const apiUrl = process.env.NEXT_PUBLIC_API_URL?.replace(/\/+$/, "");
+	if (!apiUrl) {
+		throw new Error("NEXT_PUBLIC_API_URL must be configured to generate the homepage");
+	}
+
 	try {
-		const res = await fetch(`${newUrl}/api/home-page?populate[hero][populate]=*`);
-		const heroData = await res.json();
-
-		const worldMap = await fetch(`${newUrl}/api/home-page?populate[world_map][populate]=*`);
-		const worldMapData = await worldMap.json();
-
-		const payPerClick = await fetch(`${newUrl}/api/home-page?populate[cro_opportunities][populate]=*`);
-		const payperclickData = await payPerClick.json();
-
-		const analytics = await fetch(`${newUrl}/api/home-page?populate[google_analytics][populate]=*`);
-		const analyticsData = await analytics.json();
-
-		let otherServices = await fetch(
-			`${newUrl}/api/home-page?populate[0]=other_services&populate[1]=other_services.other_services_card&populate[2]=other_services.other_services_card.card_image`
+		const heroData = await fetchHomePageSection(apiUrl, "populate[hero][populate]=*", "hero");
+		const worldMapData = await fetchHomePageSection(apiUrl, "populate[world_map][populate]=*", "world_map");
+		const payperclickData = await fetchHomePageSection(apiUrl, "populate[cro_opportunities][populate]=*", "cro_opportunities");
+		const analyticsData = await fetchHomePageSection(apiUrl, "populate[google_analytics][populate]=*", "google_analytics");
+		const otherServicesData = await fetchHomePageSection(
+			apiUrl,
+			"populate[0]=other_services&populate[1]=other_services.other_services_card&populate[2]=other_services.other_services_card.card_image",
+			"other_services"
 		);
-		let otherServicesData = await otherServices.json();
-
-		let ourClientsData = await fetch(`${newUrl}/api/home-page?populate[our_clients][populate]=*`);
-		let ourClients = await ourClientsData.json();
-
-		let onlyErmAgencyData = await fetch(
-			`${newUrl}/api/home-page?populate[0]=only_erm_agency&populate[1]=only_erm_agency.only_erm_agency_card&populate[2]=only_erm_agency.only_erm_agency_card.image`
+		const ourClients = await fetchHomePageSection(apiUrl, "populate[our_clients][populate]=*", "our_clients");
+		const onlyErmAgency = await fetchHomePageSection(
+			apiUrl,
+			"populate[0]=only_erm_agency&populate[1]=only_erm_agency.only_erm_agency_card&populate[2]=only_erm_agency.only_erm_agency_card.image",
+			"only_erm_agency"
 		);
-		let onlyErmAgency = await onlyErmAgencyData.json();
-
-		let keyServeiceData = await fetch(
-			`${newUrl}/api/home-page?populate[0]=choose_how_you_work&populate[1]=choose_how_you_work.others_card&populate[2]=choose_how_you_work.long_first_card&populate[3]=choose_how_you_work.long_first_card.image&populate[4]=choose_how_you_work.others_card.image`
+		const keyServeice = await fetchHomePageSection(
+			apiUrl,
+			"populate[0]=choose_how_you_work&populate[1]=choose_how_you_work.others_card&populate[2]=choose_how_you_work.long_first_card&populate[3]=choose_how_you_work.long_first_card.image&populate[4]=choose_how_you_work.others_card.image",
+			"choose_how_you_work"
 		);
-		let keyServeice = await keyServeiceData.json();
-
-		let customMarketingData = await fetch(`${newUrl}/api/home-page?populate[custom_marketing_plan][populate]=*`);
-		let customMarketing = await customMarketingData.json();
-
-		let dedicatedTeam = await fetch(`${newUrl}/api/home-page?populate[dedicated_team][populate]=*`);
-		let dedicatedTeamData = await dedicatedTeam.json();
-
-		let teamResponseData = await fetch(
-			`${newUrl}/api/home-page?populate[0]=your_team_response&populate[1]=your_team_response.long_first_card&populate[2]=your_team_response.others_card&populate[3]=your_team_response.long_first_card.image&populate[4]=your_team_response.others_card.image`
+		const teamResponse = await fetchHomePageSection(
+			apiUrl,
+			"populate[0]=your_team_response&populate[1]=your_team_response.long_first_card&populate[2]=your_team_response.others_card&populate[3]=your_team_response.long_first_card.image&populate[4]=your_team_response.others_card.image",
+			"your_team_response"
 		);
-		let teamResponse = await teamResponseData.json();
-
-		let winingStrategyData = await fetch(`${newUrl}/api/home-page?populate[wining_strategy][populate]=*`);
-		let winingStrategy = await winingStrategyData.json();
-
-		let testimonialCarouselData = await fetch(
-			`${newUrl}/api/home-page?populate[0]=testimonial_carousel&populate[1]=testimonial_carousel.testimonial_data&populate[2]=testimonial_carousel.testimonial_data.persons_image&populate[3]=testimonial_carousel.testimonial_data.company_logo`
+		const winingStrategy = await fetchHomePageSection(apiUrl, "populate[wining_strategy][populate]=*", "wining_strategy");
+		const testimonialCarousel = await fetchHomePageSection(
+			apiUrl,
+			"populate[0]=testimonial_carousel&populate[1]=testimonial_carousel.testimonial_data&populate[2]=testimonial_carousel.testimonial_data.persons_image&populate[3]=testimonial_carousel.testimonial_data.company_logo",
+			"testimonial_carousel"
 		);
-		let testimonialCarousel = await testimonialCarouselData.json();
+		const caseStudySectionData = await fetchHomePageSection(apiUrl, "populate[0]=casestudy_section.case_studies", "casestudy_section");
+		const footerTopCta = await fetchHomePageSection(apiUrl, "populate[footer_top_cta][populate]=*", "footer_top_cta");
+		const seoData = await fetchHomePageSection(apiUrl, "populate[seo][populate]=*", "seo");
+		const caseStudyCardResponse = await fetch(`${apiUrl}/api/case-studies?fields=id`);
+		if (!caseStudyCardResponse.ok) {
+			throw new Error(`CMS request for homepage case study cards failed with status ${caseStudyCardResponse.status}`);
+		}
+		const caseStudyCard = await caseStudyCardResponse.json();
+		if (!Array.isArray(caseStudyCard?.data) || !caseStudyCard?.meta?.pagination) {
+			throw new Error("CMS response is missing homepage case study card data");
+		}
 
-		let footerTopCtaData = await fetch(`${newUrl}/api/home-page?populate[footer_top_cta][populate]=*`);
-		let footerTopCta = await footerTopCtaData.json();
-
-		let seo = await fetch(`${newUrl}/api/home-page?populate[seo][populate]=*`);
-		let seoData = await seo.json();
-
-		// By returning { props: { posts } }, the Blog component
-		// will receive `posts` as a prop at build time
 		return {
 			props: {
 				heroData,
@@ -457,17 +369,18 @@ export async function getStaticProps() {
 				ourClients,
 				onlyErmAgency,
 				keyServeice,
-				customMarketing,
-				dedicatedTeamData,
 				teamResponse,
 				winingStrategy,
 				testimonialCarousel,
 				footerTopCta,
 				seoData,
+				caseStudySectionData,
+				caseStudyCard,
 			},
 			revalidate: 60,
 		};
 	} catch (error) {
-		return { props: { error: { ok: false, reason: "Check Your Internet Connection" } } };
+		console.error("Failed to generate homepage data", error);
+		throw error;
 	}
 }
